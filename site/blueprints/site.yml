@@ -1,23 +1,11 @@
 title: Site
 
 sections:
-  availability:
-    type: fields
-    fields:
-      availability_status:
-        type: toggle
-        text: 
-          - "Unavailable"
-          - "Available"
-      availability_string:
-        type: text
   pages:
     type: pages
   globals:
     type: fields
     fields:
-      contact_email:
-        type: email
       menu_links:
         type: structure
         fields:
@@ -27,7 +15,6 @@ sections:
             type: text
       footer_links:
         type: structure
-        max: 2
         fields:
           name: 
             type: text
@@ -45,9 +32,5 @@ sections:
             type: text
           url: 
             type: text
-      footnote:
-        type: textarea
-        size: small
-        buttons: false
       legal:
         type: text

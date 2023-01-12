@@ -7,11 +7,9 @@ columns:
       fields:
         type: fields
         fields:
-          intro:
-            type: textarea
-            size: small
-            buttons: false
           text:
+            type: textarea
+          blocks:
             type: blocks
 
   sidebar:
