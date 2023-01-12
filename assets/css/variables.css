@@ -1,0 +1,95 @@
+/* COLORS */
+:root {
+	--color-bg: #292726;
+	--color-fg: #D7C6B6;
+	--color-hl: #F9FFCC;
+	--color-ph: rgba(240, 236, 233, 0.1);
+	--color-text: var(--color-fg);
+	--color-text-gray: rgba(215, 198, 182, 0.5);
+	--color-canvas: #22201F;
+	--color-canvas-dark: #1B1A19;
+	--color-veil: rgba(27, 26, 25, 0.8);
+	--color-line: rgba(240, 236, 233, 0.1);
+	--color-green: #5ACB8E;
+	--color-red: #FF6C4B;
+
+}
+
+/* SPACING */
+:root {
+	--spacing-100: 4px;
+	--spacing-200: 8px;
+	--spacing-300: 12px;
+	--spacing-400: 18px;
+	--spacing-500: 40px;
+}
+
+@media (min-width: 1024px) {
+	:root {
+		--spacing-100: 4px;
+		--spacing-200: 8px;
+		--spacing-300: 22px;
+		--spacing-400: 40px;
+		--spacing-500: 100px;
+	}
+}
+
+/* LINE-HEIGHTS */
+:root {
+	--leading-10: 1;
+	--leading-120: 1.25;
+	--leading-130: 1.375;
+	--leading-150: 1.5;
+	--leading-160: 1.625;
+	--leading-200: 2;
+}
+
+/* TEXT */
+:root {
+	--font-mono: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+	--font-sans: 'Plus Jakarta Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	--font-regular: 400;
+	--font-medium: 500; 
+	--font-bold: 600;
+}
+
+/* RADIUS */
+:root {
+	--radius-100: 5px;
+	--radius-200: 8px;
+	--radius-300: 10px;
+	--radius-400: 15px;
+}
+
+
+/* SPECIALS */
+:root {
+	--gutter: var(--spacing-300);
+	--rhythm: var(--spacing-500);
+	--rounded: var(--radius-100);
+	--site: 1920px;
+	--border: 1px solid var(--color-line);
+	--gap: var(--gutter);
+}
+
+@media (min-width: 1024px) {
+	:root {
+		--gap: var(--spacing-200);
+	}
+}
+
+
+body {
+	background: var(--color-bg);
+	color: var(--color-fg);
+	font-weight: 400;
+	font-family: var(--font-sans);
+	font-size: 14px;
+	letter-spacing: 0.02em;
+}
+
+@media (min-width: 1024px) {
+	body {
+		font-size: 16px;
+	}
+}

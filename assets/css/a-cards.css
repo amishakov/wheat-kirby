@@ -1,0 +1,46 @@
+a-cards {
+	display: block;
+}
+
+a-cards ul {
+	margin-top: var(--rhythm);
+	gap: var(--gap);
+}
+
+a-cards li {
+	padding: var(--spacing-400);
+	background-color: var(--color-canvas);
+	border-radius: var(--radius-100);
+	aspect-ratio: 1 / 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+	a-cards li {
+		aspect-ratio: 775 / 362;
+	}
+}
+
+a-cards figure {
+	width: 6rem;
+	height: 6rem;
+	overflow: hidden;
+	margin-left: auto;
+	background: var(--color-ph);
+	border-radius: var(--radius-400);
+}
+
+a-cards  figure img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/* a-cards h3 {} */
+
+a-cards p {
+	width: 100%;
+	padding-right: 25%;
+	align-self: flex-end;
+}

@@ -1,0 +1,56 @@
+site-menu {
+    visibility: hidden;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+site-menu[open="true"] {
+    visibility: visible;
+}
+
+site-menu .veil {
+    position: absolute;
+    inset: 0;
+    background: var(--color-veil);
+}
+
+site-menu .button {
+    width: 100%;
+    display: flex;
+    padding: var(--rhythm) 0;
+}
+
+site-menu .dialog {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 var(--gutter) var(--gutter) var(--gutter);
+    background-color:  var(--color-canvas);
+    border-radius: var(--radius-100) var(--radius-100) 0 0;
+
+    transform: translateY(10px);
+    transition-property: transform;
+    transition-duration: 400ms;
+}
+
+site-menu[open="true"] .dialog {
+    transform: translateY(0);
+}
+
+site-menu nav a {
+    padding: 2rem var(--gutter);
+    width: 100%;
+    display: block;
+    border-bottom: var(--border);
+}
+
+
+site-menu time-of-day {
+    align-items: center;
+    padding: var(--rhythm) var(--gutter);
+}
+
+

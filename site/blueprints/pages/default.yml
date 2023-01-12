@@ -1,5 +1,5 @@
-title: Default Page
-
+title: Default
+icon: 📄
 columns:
   main:
     width: 2/3
@@ -7,9 +7,13 @@ columns:
       fields:
         type: fields
         fields:
-          text:
+          intro:
             type: textarea
-            size: huge
+            size: small
+            buttons: false
+          text:
+            type: blocks
+
   sidebar:
     width: 1/3
     sections:

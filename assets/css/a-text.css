@@ -1,0 +1,7 @@
+a-text {
+	position: relative;
+}
+
+a-text .content > .prose {
+	max-width: 52ch;
+}

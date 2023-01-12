@@ -44,7 +44,18 @@ Icon
 /site/sessions/*
 !/site/sessions/index.html
 
+# Content
+# ---------------
+
+/content/*
+
 # License
 # ---------------
 
 /site/config/.license
+
+# Temporary files
+# ---------------
+
+/node_modules/
+package-lock.json

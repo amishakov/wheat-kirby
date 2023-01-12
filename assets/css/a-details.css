@@ -1,0 +1,35 @@
+/* a-details {} */
+
+a-details details {
+	background: var(--color-canvas);
+	border-radius: var(--rounded);
+	margin-bottom: var(--gap);
+	padding: 2rem 1.5rem;
+	margin-left: auto;
+}
+
+a-details details > summary {
+	align-items: center;
+	display: flex;
+	font-family: var(--font-mono);
+	justify-content: space-between;
+	list-style: none;
+	text-transform: uppercase;
+	user-select: none;
+}
+
+a-details details > summary svg {
+	flex-shrink: 0;
+	margin-left: 1rem;
+	transform: rotate(180deg);
+	width: auto;
+}
+
+a-details details[open] > summary svg {
+	transform: rotate(0);
+}
+
+a-details details > .prose {
+	max-width: 72ch;
+	padding: 2rem 0 1rem 0;
+}

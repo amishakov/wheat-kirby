@@ -1,0 +1,33 @@
+.spinner {
+	animation-duration: 1.1s;
+	animation-iteration-count: infinite;
+	animation-name: spinner;
+    box-sizing: border-box;
+	animation-timing-function: linear;
+	border-bottom: 2px solid var(--color-text-gray);
+	border-left: 2px solid var(--color-text);
+	border-radius: 100%;
+	border-right: 2px solid var(--color-text-gray);
+	border-top: 2px solid var(--color-text-gray);
+	box-sizing: border-box;
+	color: var(--color-fg);
+	content: "";
+	height: 1rem;
+	opacity: 0;
+	transform: translateZ(0);
+	visibility: hidden;
+	width: 1rem;
+}
+
+@keyframes spinner {
+	0% {
+		opacity: 1;
+		transform: rotate(0deg);
+		visibility: visible;
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(360deg);
+		visibility: visible;
+	}
+}
