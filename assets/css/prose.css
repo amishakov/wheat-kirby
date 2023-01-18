@@ -1,65 +1,24 @@
 .prose {
-	line-height: 1.5em;
+	font-size: medium;
+	line-height: 1.5;
 }
 
-.prose a {
-	text-decoration: underline;
-}
-
-.prose :first-child {
-	margin-top: 0;
-}
-
-.prose :last-child {
-	margin-bottom: 0;
-}
-
-.prose p,
-.prose ul,
-.prose ol {
-	margin-bottom: 2rem;
-}
-
-.prose ul,
-.prose ol {
-	padding-left: 1rem;
-}
-
-.prose ul p,
-.prose ol p {
-	margin-bottom: 0;
-}
-
-.prose ul > li {
-	list-style: disc;
-}
-
-.prose ol > li {
-	list-style: decimal;
-}
-
-.prose ul ol,
-.prose ul ul,
-.prose ol ul,
-.prose ol ol {
-	margin-bottom: 0;
+.prose * + p {
+	margin-top: 2rem;
 }
 
 .prose h1, .h1 {
 	font-size: 2rem;
-	margin-bottom: 3rem;
 	line-height: 1.25em;
 }
 
 .prose h2, .h2 {
 	font-size: 2rem;
-	margin-bottom: 2rem;
 	line-height: 1.2;
 }
 
 .prose h3, .h3 {
 	font-size: 1.5rem;
-	margin-bottom: 2rem;
 	line-height: 1.2;
 }
 
@@ -68,8 +27,7 @@
 }
 
 .prose code {
-	font-family: var(--font-family-mono);
-	font-size: 1em;
+	font-family: var(--ff-mono);
 	padding: 0 0.5rem;
 	display: inline-block;
 }
@@ -89,28 +47,64 @@
 }
 
 .prose hr {
-	margin: 6rem 0;
+	margin: var(--rhythm) 0;
 }
 
-.prose dt {
-	font-weight: 600;
+/* MARGIN */
+.prose > :first-child {
+		padding-top: 0;
+		margin-top: 0;
+	}
+	.prose > :last-child {
+		margin-bottom: 0;
+	}
+
+.prose * + blockquote,
+.prose * + h4,
+.prose * + h5,
+.prose * + h6,
+.prose * + hr,
+.prose * + p,
+.prose * + ol,
+.prose * + ul,
+.prose > * + details {
+	margin-top: 1.5em;
 }
 
+/* LIST */
+.prose ul,
+.prose ol {
+	padding-left: 1rem;
+}
+
+.prose ul > li {
+	list-style: disc;
+}
+
+.prose ol > li {
+	list-style: decimal;
+}
+
+/* QUOTE */
 .prose blockquote {
 	font-size: 1.25rem;
 	line-height: 1.325em;
-	border-left: 2px solid var(--color-black);
+	border-left: 2px solid black;
 	padding-left: 1rem;
 	margin: 3rem 0;
 	max-width: 25rem;
 }
 
-.prose blockquote footer {
-	font-size: 0.875rem;
-	font-style: italic;
+/* LINK */
+.prose a {
+	text-decoration: underline;
 }
 
-.prose figcaption {
-	padding-top: 0.75rem;
-	color: var(--color-text-grey);
+/* MISC */
+.prose :first-child {
+	margin-top: 0;
+}
+
+.prose :last-child {
+	margin-bottom: 0;
 }

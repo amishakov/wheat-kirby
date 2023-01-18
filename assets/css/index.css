@@ -1,6 +1,8 @@
+/* FRAMEWORK */
 @import "reset.css";
+@import "variables.css";
+@import "ctn.css";
 @import "buttons.css";
-@import "crumbs.css";
 @import "fonts.css";
 @import "img.css";
 @import "prose.css";
@@ -9,13 +11,16 @@
 @import "site-menu.css";
 @import "spinner.css";
 @import "utils.css";
-@import "variables.css";
+@import "heading.css";
 
+/* PAGES */
 @import "default.css";
 
+/* BLOCKS */
 @import "a-text.css";
 @import "a-hr.css";
 @import "a-cards.css";
 @import "a-details.css";
 
+/* MISC */
 @import "fx.css";
