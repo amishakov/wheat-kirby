@@ -12,6 +12,7 @@
 @import "spinner.css";
 @import "utils.css";
 @import "heading.css";
+@import "transition.css";
 
 /* PAGES */
 @import "default.css";

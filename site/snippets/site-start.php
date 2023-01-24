@@ -40,17 +40,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?= $title ?></title>
         <meta name="description" content="<?= $desc ?>">
-
-        <link rel="preload" href="<?= url('assets/fonts/ibm-plex-mono-v12-latin-regular.woff2') ?>" as="font" type="font/woff2" crossorigin="">
-        <link rel="preload" href="<?= url('assets/fonts/plus-jakarta-sans-v3-latin-regular.woff2') ?>" as="font" type="font/woff2" crossorigin="">
  
         <link rel="stylesheet" href="/assets/css/compiled.css?v=<?= $salt ?>">
         <script src="/assets/js/app/compiled.js?v=<?= $salt ?>" defer></script>
         <script src="/assets/js/com/site-menu.js?v=<?= $salt ?>" defer></script>
         <script src="/assets/js/com/btn-back.js?v=<?= $salt ?>" defer></script>
         <script src="/assets/js/com/btn-copy.js?v=<?= $salt ?>" defer></script>
-        <script src="/assets/js/com/time-of-day.js?v=<?= $salt ?>" defer></script>
-        <script src="/assets/js/com/site-saver.js?v=<?= $salt ?>" defer></script>
         
         <link rel="apple-touch-icon" sizes="180x180" href="<?= url('assets/images/apple-touch-icon.png') ?>">
         <link rel="icon" type="image/png" sizes="32x32" href="<?= url('assets/images/favicon-32x32.png') ?>">
@@ -64,6 +59,6 @@
         <meta name="twitter:title" content="<?= $title ?>">
         <meta name="twitter:description" content="<?= $desc ?>">
         <meta name="twitter:image" content="<?= $img ?>">
-        <meta name="htmx-config" content='{"includeIndicatorStyles": false, "scrollBehavior":"auto", "defaultSettleDelay": 0, "defaultSwapDelay": 0}'>
+        <meta name="htmx-config" content='{"includeIndicatorStyles": false, "scrollBehavior":"auto", "defaultSettleDelay": 0, "defaultSwapDelay": 600}'>
     </head>
-    <body class="top" hx-boost="true" hx-swap="innerHTML">
+    <body class="top" hx-boost="true">
