@@ -1,16 +1,33 @@
-class NavLink extends HTMLAnchorElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        const href = this.getAttribute("href");
-        if (!!href) {
-            if (href.match("^/") || href.includes(window.location.protocol + '//' + window.location.hostname)) {
-            } else {
-                this.setAttribute("target", "_blank");
-                this.setAttribute("rel", "noopener");
-            }
-        }
+(function () {
+	"use strict";
+
+	window.addEventListener("htmx:load", crawl);
+
+	function crawl() {
+		const links = document.querySelectorAll("a");
+
+		links.forEach((a) => {
+			if (!!a) {
+				setLinkAttr(a);
+			}
+		});
 	}
-}
-customElements.define("nav-link", NavLink, { extends: "a" });
+
+	function isSameDomain(a) {
+		var currentUrl = window.location.href;
+		var linkUrl = a.href;
+		var currentDomain = currentUrl.split("/")[2];
+		var linkDomain = linkUrl.split("/")[2];
+		if (!linkDomain || currentDomain === linkDomain) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function setLinkAttr(a) {
+		if (!isSameDomain(a)) {
+			a.setAttribute("target", "_blank");
+		}
+	}
+})();

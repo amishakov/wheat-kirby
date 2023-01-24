@@ -1,6 +1,10 @@
 (function () {
 	"use strict";
-	window.addEventListener("load", (event) => {
-        document.body.classList.add("loaded");
-    });
+
+	window.addEventListener("load", loaded);
+
+	function loaded() {
+		document.body.classList.add("loaded");
+		window.removeEventListener("load", loaded);
+	}
 })();
