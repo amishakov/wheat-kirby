@@ -18,6 +18,7 @@
 @import "default.css";
 
 /* BLOCKS */
+@import "wht-hr.css";
 @import "a-text.css";
 @import "a-hr.css";
 @import "a-cards.css";

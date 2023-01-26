@@ -1,6 +1,6 @@
 :root {
-    --ctn-padding: var(--spacing-24);
-    --ctn-max-width: 90rem;
+    --ctn-padding: 20px;
+    --ctn-max-width: 1600px;
 }
 
 .ctn {

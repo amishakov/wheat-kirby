@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     max-width: var(--ctn-max-width);
-    padding: 1rem;
+    padding: var(--ctn-padding);
     width: 100%;
     align-items: center;
     margin: 0 auto;

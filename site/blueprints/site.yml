@@ -13,7 +13,7 @@ sections:
             type: text
           url: 
             type: text
-      footer_links:
+      footerLinks:
         type: structure
         fields:
           name: 
@@ -25,12 +25,5 @@ sections:
                 type: text
               url: 
                 type: text
-      social_links:
-        type: structure
-        fields:
-          label: 
-            type: text
-          url: 
-            type: text
       legal:
         type: text
