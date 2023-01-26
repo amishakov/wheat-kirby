@@ -11,18 +11,15 @@
 @import "site-menu.css";
 @import "spinner.css";
 @import "utils.css";
-@import "heading.css";
 @import "transition.css";
 
 /* PAGES */
 @import "default.css";
 
 /* BLOCKS */
+@import "block.css";
 @import "wht-hr.css";
-@import "a-text.css";
-@import "a-hr.css";
-@import "a-cards.css";
-@import "a-details.css";
+@import "wht-2col";
 
 /* MISC */
 @import "fx.css";

@@ -1,0 +1,8 @@
+.block {
+    display: block;
+    position: relative;
+}
+
+.block + .block {
+    margin-top: var(--spacing-600);
+}

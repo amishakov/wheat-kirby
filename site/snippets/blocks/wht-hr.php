@@ -1,4 +1,4 @@
-<wht-hr class="mt-100">
+<wht-hr class="block">
     <div class="ctn">
         <hr>
     </div>

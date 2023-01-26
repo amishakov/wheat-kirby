@@ -1,0 +1,10 @@
+name:  2 col
+label: "{{ anchor }}"
+fields:
+  anchor: 
+    type: slug
+  text1:
+    type: textarea
+  text2:
+    type: textarea
+

@@ -1,5 +1,5 @@
 <footer id="footer">
-    <div class="ctn">
+    <div class="ctn mb-200">
         <hr>
         <nav class="mt-600">
             <?php foreach ($site->footerLinks()->toStructure() as $group): ?>

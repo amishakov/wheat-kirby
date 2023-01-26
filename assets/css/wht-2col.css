@@ -1,0 +1,17 @@
+/* wht-2col {} */
+
+wht-2col .ctn {
+    display: grid;
+    gap: var(--spacing-200);
+
+}
+
+@media (min-width: 1024px) {
+    wht-2col .ctn {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+wht-2col p {
+    color: var(--color-fgl);
+}
