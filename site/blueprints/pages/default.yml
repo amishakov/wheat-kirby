@@ -12,6 +12,7 @@ columns:
             type: blocks
             fieldsets:
               - wht-2col
+              - wht-enum
               - wht-hr
               - wht-txt
               - wht-yt

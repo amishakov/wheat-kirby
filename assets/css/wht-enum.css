@@ -1,0 +1,24 @@
+/* wht-enum {} */
+
+wht-enum .ctn {
+    display: grid;
+    gap: var(--spacing-200);
+
+}
+
+@media (min-width: 1024px) {
+    wht-enum .ctn {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+wht-enum h3 {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+}
+
+wht-enum p {
+    margin-top: 1rem;
+    font-size: var(--text-sm);
+    color: var(--color-fgl);
+}

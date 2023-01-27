@@ -19,7 +19,8 @@
 /* BLOCKS */
 @import "block.css";
 @import "wht-hr.css";
-@import "wht-2col";
+@import "wht-2col.css";
+@import "wht-enum.css";
 
 /* MISC */
 @import "fx.css";

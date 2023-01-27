@@ -12,6 +12,8 @@ wht-2col .ctn {
     }
 }
 
-wht-2col p {
+wht-2col p,
+wht-2col ul,
+wht-2col ol {
     color: var(--color-fgl);
 }
