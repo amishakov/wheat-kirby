@@ -1,0 +1,15 @@
+name:  enum
+label: "{{ anchor }}"
+fields:
+  anchor: 
+    type: slug
+  items:
+    type: structure
+    fields:
+      title:
+        type: text
+      text:
+        type: textarea
+        size: small
+        button: false
+

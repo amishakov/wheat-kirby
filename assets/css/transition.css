@@ -1,0 +1,36 @@
+/* body #transition {
+    transform: translateY(100%);
+	background: lightgrey;
+	position: fixed;
+	inset: 0;
+}
+
+body.boosted:not([class*="htmx-"]) #transition {
+	transform: translateY(0);
+	background: #1d1d1d;
+	animation-name: page-in;
+	animation-duration: 1000ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+body.boosted[class*="htmx-"] #transition {
+	animation-name: page-out;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@keyframes page-in {
+	to {
+		transform: translateY(100%);
+		background: lightgrey;
+	}
+}
+
+@keyframes page-out {
+	to {
+		transform: translateY(0);
+		background: #1d1d1d;
+	}
+} */

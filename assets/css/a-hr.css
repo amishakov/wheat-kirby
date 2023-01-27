@@ -1,0 +1,10 @@
+a-hr {
+    display: block;
+    position: relative;
+}
+
+a-hr hr {
+    width: 100%;
+    border: none;
+    border-top: var(--border);
+}

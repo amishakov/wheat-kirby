@@ -1,0 +1,16 @@
+/* wht-hr {} */
+
+wht-hr hr {
+    border: none;
+    height: 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+wht-hr hr::after {
+    background: currentColor;
+    content: "";
+    inset: 0;
+    opacity: 0.1;
+    position: absolute;
+}

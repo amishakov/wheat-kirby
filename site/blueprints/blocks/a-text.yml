@@ -1,0 +1,11 @@
+name: Text
+icon: text
+label: "{{ anchor }}"
+fields:
+  anchor: 
+    type: slug
+  title:
+    type: text
+  text:
+    type: textarea
+

@@ -1,0 +1,20 @@
+img[loading="lazy"]:not([loaded]) {
+	opacity: 0;
+}
+
+img[loading="lazy"][loaded] {
+	animation-name: lazyImg;
+	animation-duration: 500ms;
+	animation-delay: 0ms;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+
+@keyframes lazyImg {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

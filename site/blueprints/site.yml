@@ -1,0 +1,29 @@
+title: Site
+
+sections:
+  pages:
+    type: pages
+  globals:
+    type: fields
+    fields:
+      menu_links:
+        type: structure
+        fields:
+          label: 
+            type: text
+          url: 
+            type: text
+      footerLinks:
+        type: structure
+        fields:
+          name: 
+            type: text
+          links:
+            type: structure
+            fields:
+              label: 
+                type: text
+              url: 
+                type: text
+      legal:
+        type: text
