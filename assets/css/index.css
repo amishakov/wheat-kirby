@@ -2,7 +2,7 @@
 @import "reset.css";
 @import "variables.css";
 @import "ctn.css";
-@import "buttons.css";
+@import "btn.css";
 @import "fonts.css";
 @import "img.css";
 @import "prose.css";
@@ -21,6 +21,7 @@
 @import "wht-hr.css";
 @import "wht-2col.css";
 @import "wht-enum.css";
+@import "wht-h.css";
 
 /* MISC */
 @import "fx.css";

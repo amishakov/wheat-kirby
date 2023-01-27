@@ -14,7 +14,6 @@ wht-enum .ctn {
 
 wht-enum h3 {
     font-family: var(--font-serif);
-    font-size: var(--text-xl);
 }
 
 wht-enum p {

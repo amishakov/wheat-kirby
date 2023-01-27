@@ -6,8 +6,6 @@ columns:
       fields:
         type: fields
         fields:
-          text:
-            type: textarea
           blocks:
             type: blocks
             fieldsets:
@@ -18,6 +16,7 @@ columns:
               - wht-yt
               - wht-img
               - wht-vid
+              - wht-h
 
   sidebar:
     width: 1/3

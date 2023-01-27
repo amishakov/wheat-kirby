@@ -2,7 +2,7 @@
     <div class="ctn">
         <?php foreach ($block->items()->toStructure() as $item): ?>
         <article>
-            <h3><?= $item->title() ?></h3>
+            <h3 class="h3"><?= $item->title() ?></h3>
             <p><?= $item->text() ?></p>
         </article>
         <?php endforeach ?>
