@@ -40,6 +40,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?= $title ?></title>
         <meta name="description" content="<?= $desc ?>">
+
+        <link rel="preload" href="/assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
+        <link rel="preload" href="/assets/fonts/ibm-plex-serif-v15-regular.woff2" as="font" type="font/woff2" crossorigin="">
  
         <link rel="stylesheet" href="/assets/css/compiled.css?v=<?= $salt ?>">
         <script src="/assets/js/app/compiled.js?v=<?= $salt ?>" defer></script>
