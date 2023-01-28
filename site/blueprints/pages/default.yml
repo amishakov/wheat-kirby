@@ -12,8 +12,6 @@ columns:
               - wht-2col
               - wht-enum
               - wht-hr
-              - wht-txt
-              - wht-yt
               - wht-img
               - wht-vid
               - wht-h
