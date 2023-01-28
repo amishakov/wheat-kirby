@@ -4,9 +4,16 @@ wht-h .ctn {
     text-align: center;
 }
 
+wht-h h1,
+wht-h h2,
+wht-h h3 {
+    max-width: 32ch;
+    margin: 0 auto;
+}
+
 wht-h .links {
+    align-items: center;
     display: flex;
     gap: 1rem;
-    align-items: center;
     justify-content: center;
 }

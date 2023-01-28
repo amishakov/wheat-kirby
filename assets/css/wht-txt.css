@@ -1,0 +1,25 @@
+/* wht-txt {} */
+
+wht-txt .ctn {
+    display: grid;
+    gap: var(--spacing-200);
+
+}
+
+@media (min-width: 1024px) {
+    wht-txt .ctn {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+wht-txt p,
+wht-txt ul,
+wht-txt ol {
+    color: var(--color-fgl);
+}
+
+wht-txt .links {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}

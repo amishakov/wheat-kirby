@@ -9,7 +9,7 @@ columns:
           blocks:
             type: blocks
             fieldsets:
-              - wht-2col
+              - wht-txt
               - wht-enum
               - wht-hr
               - wht-img
