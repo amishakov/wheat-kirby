@@ -1,4 +1,5 @@
-name:  text
+name: Text
+icon: text
 label: "{{ anchor }}"
 fields:
   anchor: 
