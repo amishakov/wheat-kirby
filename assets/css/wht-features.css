@@ -1,0 +1,49 @@
+/* wht-features {} */
+
+wht-features .ctn {
+    display: grid;
+    gap: var(--spacing-200);
+
+}
+
+@media (min-width: 1024px) {
+    wht-features .ctn {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+wht-features h3 {
+    font-family: var(--font-serif);
+}
+
+wht-features p {
+    margin-top: 1rem;
+    font-size: var(--text-sm);
+    color: var(--color-fgl);
+}
+
+wht-features figure {
+    overflow: hidden;
+}
+
+wht-features figure.picture {
+    aspect-ratio: 3/4;
+    width: 100%;
+}
+
+wht-features figure.picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+wht-features figure.icon {
+    aspect-ratio: 1/1;
+    width: 70px;
+}
+
+wht-features figure.icon img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}

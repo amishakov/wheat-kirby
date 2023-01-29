@@ -1,4 +1,5 @@
-name:  heading
+name:  Heading
+icon: headline
 label: "{{ anchor }}"
 fields:
   anchor: 
