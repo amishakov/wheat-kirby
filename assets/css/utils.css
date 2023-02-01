@@ -1,10 +1,3 @@
-.block {
-	margin-top: var(--rhythm);
-	scroll-margin-top: var(--rhythm);
-	display: block;
-	position: relative;
-}
-
 .mt-100 {
 	margin-top: var(--spacing-100);
 }
