@@ -1,36 +1,39 @@
-/* body #transition {
-    transform: translateY(100%);
-	background: lightgrey;
+body #transition {
+	background: white;
 	position: fixed;
 	inset: 0;
-}
-
-body.boosted:not([class*="htmx-"]) #transition {
-	transform: translateY(0);
-	background: #1d1d1d;
-	animation-name: page-in;
-	animation-duration: 1000ms;
-	animation-fill-mode: forwards;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
 	animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 body.boosted[class*="htmx-"] #transition {
 	animation-name: page-out;
-	animation-duration: 500ms;
+	animation-duration: 200ms;
 	animation-fill-mode: forwards;
-	animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-@keyframes page-in {
-	to {
-		transform: translateY(100%);
-		background: lightgrey;
-	}
+body.boosted:not([class*="htmx-"]) #transition {
+	visibility: visible;
+	opacity: 1;
+	animation-name: page-in;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
 }
 
 @keyframes page-out {
 	to {
-		transform: translateY(0);
-		background: #1d1d1d;
+		opacity: 1;
+		visibility: visible;
 	}
-} */
+}
+
+@keyframes page-in {
+	to {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+
