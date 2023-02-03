@@ -4,13 +4,13 @@
 	animation-name: spinner;
     box-sizing: border-box;
 	animation-timing-function: linear;
-	border-bottom: 2px solid var(--color-text-gray);
-	border-left: 2px solid var(--color-text);
+	border-bottom: 2px solid var(--c-fgl);
+	border-left: 2px solid var(--c-text);
 	border-radius: 100%;
-	border-right: 2px solid var(--color-text-gray);
-	border-top: 2px solid var(--color-text-gray);
+	border-right: 2px solid var(--c-fgl);
+	border-top: 2px solid var(--c-fgl);
 	box-sizing: border-box;
-	color: var(--color-fg);
+	color: var(--c-fg);
 	content: "";
 	height: 1rem;
 	opacity: 0;

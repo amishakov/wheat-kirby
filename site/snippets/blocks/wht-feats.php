@@ -1,4 +1,4 @@
-<wht-features class="block">
+<wht-feats class="block">
     <div class="ctn">
         <?php foreach ($block->items()->toStructure() as $item): ?>
         <article>
@@ -12,4 +12,4 @@
         </article>
         <?php endforeach ?>
     </div>
-</wht-features>
+</wht-feats>

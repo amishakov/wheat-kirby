@@ -12,10 +12,14 @@ wht-txt .ctn {
     }
 }
 
+wht-txt .prose {
+    max-width: 52ch;
+}
+
 wht-txt p,
 wht-txt ul,
 wht-txt ol {
-    color: var(--color-fgl);
+    color: var(--c-fgl);
 }
 
 wht-txt .links {

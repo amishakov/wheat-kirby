@@ -14,7 +14,7 @@
 }
 
 .default-body .intro  {
-  color: var(--color-text-gray);
+  color: var(--c-fgl);
   font-weight: 600;
   font-size: larger;
   line-height: 1.5;

@@ -1,0 +1,38 @@
+/* wht-feat {} */
+
+wht-feat .ctn {
+    display: grid;
+    gap: var(--spacing-200);
+
+}
+
+@media (min-width: 1024px) {
+    wht-feat .ctn {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    wht-feat .media.right {
+        order: 1;
+    }
+}
+
+wht-feat .prose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 52ch;
+}
+
+wht-feat p,
+wht-feat ul,
+wht-feat ol {
+    color: var(--c-fgl);
+}
+
+wht-feat .links {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
