@@ -10,6 +10,10 @@ img[loading="lazy"][loaded] {
 	animation-iteration-count: 1;
 }
 
+img[loading="lazy"]:not([loaded]) {
+	background: var(--c-ph);
+}
+
 @keyframes lazyImg {
 	0% {
 		opacity: 0;

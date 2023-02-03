@@ -13,7 +13,7 @@
 }
 
 .link {
-    color: var(--color-fg);
+    color: var(--c-fg);
     font-size: var(--text-base);
     text-decoration: underline;
 }

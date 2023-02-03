@@ -10,7 +10,8 @@ columns:
             type: blocks
             fieldsets:
               - wht-txt
-              - wht-features
+              - wht-feat
+              - wht-feats
               - wht-hr
               - wht-img
               - wht-vid

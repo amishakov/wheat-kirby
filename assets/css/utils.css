@@ -103,6 +103,6 @@
 }
 
 ::selection {
-    color: var(--color-fg);
+    color: var(--c-fg);
     background-color: gold;
 }

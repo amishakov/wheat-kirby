@@ -25,10 +25,10 @@
 #footer nav ul li:first-child {
     text-transform: uppercase;
     margin-bottom: 1rem;
-    color: var(--color-fg);
+    color: var(--c-fg);
 }
 
 #footer nav ul li:not(:first-child) {
     margin-top: 0.5rem;
-    color: var(--color-fgl);
+    color: var(--c-fgl);
 }

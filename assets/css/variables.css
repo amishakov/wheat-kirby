@@ -1,15 +1,15 @@
 /* COLORS */
 :root {
-	--color-bg: rgb(255, 255, 255);
-	--color-fg: rgb(5, 5, 5);
-	--color-fgl: rgb(92, 92, 92);
-	--color-hl: gold;
-	--color-line: rgba(27, 26, 25, 0.8);
-	--color-ph: rgba(240, 236, 233, 0.1);
-	--color-veil: rgba(27, 26, 25, 0.8);
+	--c-bg: rgb(255, 255, 255);
+	--c-fg: rgb(5, 5, 5);
+	--c-fgl: rgb(92, 92, 92);
+	--c-hl: gold;
+	--c-line: rgba(27, 26, 25, 0.8);
+	--c-ph: rgba(240, 236, 233, 0.1);
+	--c-veil: rgba(27, 26, 25, 0.8);
 
-	--color-green: #5ACB8E;
-	--color-red: #f13e16;
+	--c-green: #5ACB8E;
+	--c-red: #f13e16;
 
 	--leading-none: 1;
 	--leading-100: 1.25;

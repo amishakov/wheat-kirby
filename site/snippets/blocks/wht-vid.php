@@ -4,7 +4,7 @@
 
         <?php $p = $block->poster()->isNotEmpty() ? $block->poster()->toFile()->url() : "" ?>
 
-        <video autoplay loop muted disableremoteplayback poster="<?= $p ?>">
+        <video poster="<?= $p ?>" autoplay loop muted playsinline disableremoteplayback>
             <source type="video/mp4" src="<?= $vid->url() ?>">
 	    </video>
         <?php endif ?>

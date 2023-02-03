@@ -13,7 +13,7 @@ site-menu[open="true"] {
 site-menu .veil {
     position: absolute;
     inset: 0;
-    background: var(--color-veil);
+    background: var(--c-veil);
 }
 
 site-menu .button {
@@ -28,7 +28,7 @@ site-menu .dialog {
     left: 0;
     right: 0;
     padding: 0 var(--gutter) var(--gutter) var(--gutter);
-    background-color:  var(--color-canvas);
+    background-color:  var(--c-canvas);
     border-radius: var(--radius-100) var(--radius-100) 0 0;
 
     transform: translateY(10px);
