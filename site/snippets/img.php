@@ -1,10 +1,13 @@
 <?php if ($image): ?>
-<img
-    alt="<?= $image->alt() ?>"
-    src="<?= $image->resize(300)->url() ?>"
-    srcset="<?= $image->srcset('webp') ?>"
-    width="<?= $image->resize(1800)->width() ?>"
-    height="<?= $image->resize(1800)->height() ?>"
-    loading="lazy"
->
+<figure style="--aspect-ratio:<?= $image->width() . '/' . $image->height() ?>;">
+    <img
+        alt="<?= $image->alt() ?>"
+        src="<?= $image->resize(300)->url() ?>"
+        srcset="<?= $image->srcset('webp') ?>"
+        width="<?= $image->width() ?>"
+        height="<?= $image->height() ?>"
+        loading="lazy"
+    >    
+</figure>
+
 <?php endif ?>

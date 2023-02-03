@@ -10,13 +10,31 @@ img[loading="lazy"][loaded] {
 	animation-iteration-count: 1;
 }
 
-img[loading="lazy"]:not([loaded]) {
+figure:has(img[loading="lazy"]) {
+	aspect-ratio: var(--aspect-ratio);
+}
+
+figure:has(img[loading="lazy"]:not([loaded])) {
 	background: var(--c-ph);
+	animation: lazyImgLoading 2s infinite;
+	border-radius: 1rem;
 }
 
 @keyframes lazyImg {
 	0% {
 		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes lazyImgLoading {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
 	}
 	100% {
 		opacity: 1;
