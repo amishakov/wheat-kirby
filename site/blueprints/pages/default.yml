@@ -10,6 +10,7 @@ columns:
             type: blocks
             fieldsets:
               - wht-txt
+              - wht-refs
               - wht-feat
               - wht-feats
               - wht-hr

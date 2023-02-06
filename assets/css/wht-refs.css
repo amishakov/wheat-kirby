@@ -1,0 +1,29 @@
+/* wht-refs {} */
+
+wht-refs .ctn {
+    display: grid;
+    gap: var(--spacing-200);
+
+}
+
+@media (min-width: 1024px) {
+    wht-refs .ctn {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+wht-refs .prose {
+    max-width: 52ch;
+}
+
+wht-refs p,
+wht-refs ul,
+wht-refs ol {
+    color: var(--c-fgl);
+}
+
+wht-refs .links {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}

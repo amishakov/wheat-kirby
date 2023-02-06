@@ -1,0 +1,33 @@
+name: References
+icon: text
+label: "{{ anchor }}"
+fields:
+  anchor: 
+    type: slug
+  text:
+    type: textarea
+  items:
+    type: structure
+    fields:
+      title:
+        type: text
+      subtext:
+        type: text
+      url:
+        type: url
+  links:
+    type: structure
+    fields:
+      style:
+        type: select
+        empty: false
+        default: "btn"
+        width: 1/6
+        options:
+          - btn
+          - link
+      label:
+        type: text
+        width: 5/6
+      url:
+        type: text
