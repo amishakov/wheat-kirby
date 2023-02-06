@@ -18,7 +18,7 @@ wht-feats h3 {
 
 wht-feats p {
     color: var(--c-fgl);
-    font-size: var(--text-sm);
+    font-size: var(--text--100);
     margin-top: 1rem;
     max-width: 42ch;
 }
