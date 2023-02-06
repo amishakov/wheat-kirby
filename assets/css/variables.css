@@ -37,16 +37,14 @@
 	--spacing-300: 3rem;
 	--spacing-600: 6rem;
 
-	--text-xs: 0.75rem;
-	--text-sm: 0.875rem;
-	--text-base: 1rem;
-	--text-lg: 1.125rem;
-	--text-xl: 1.25rem;
-	--text-2xl: 1.5rem;
-	--text-3xl: 1.75rem;
-	--text-4xl: 2.5rem;
-	--text-5xl: 3rem;
-	--text-6xl: 4rem;
+	--text--200: 0.75rem;
+	--text--100: 0.875rem;
+	--text-0: 1rem;
+	--text-100: 1.125rem;
+	--text-200: 1.5625rem;
+	--text-300: 1.875rem;
+	--text-400: 2rem;
+	--text-500: 2.5rem;
 
 	--font-serif: 'IBM Plex Serif', 'Times New Roman', Times, serif;
 	--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
