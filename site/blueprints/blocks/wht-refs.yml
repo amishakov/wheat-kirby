@@ -12,7 +12,7 @@ fields:
       title:
         type: text
       subtext:
-        type: text
+        type: writer
       url:
         type: url
   links:
