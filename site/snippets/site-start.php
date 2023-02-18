@@ -61,5 +61,13 @@
         <meta name="twitter:description" content="<?= $desc ?>">
         <meta name="twitter:image" content="<?= $img ?>">
         <meta name="htmx-config" content='{"includeIndicatorStyles": false, "scrollBehavior":"auto", "defaultSettleDelay": 0, "defaultSwapDelay": 0}'>
+        <?php if ($scripts = $site->scripts()): ?>
+        <?= $scripts ?>
+        <?php endif ?>
+        <?php if ($styles = $site->styles()): ?>
+        <style>
+            <?= $styles ?>
+        </style>
+        <?php endif ?>
     </head>
     <body class="top" hx-boost="true">
