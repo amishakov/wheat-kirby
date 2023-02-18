@@ -4,7 +4,7 @@ tabs:
     sections:
       pages:
         type: pages
-      globals:
+      content:
         type: fields
         fields:
           menu_links:
@@ -38,5 +38,19 @@ tabs:
             multiple: false
   advanced:
     sections:
+      head:
+        type: fields
+        fields:
+          scripts:
+            type: textarea
+            buttons: false
+            font: monospace
+            help: Include script tags
+          styles:
+            type: textarea
+            buttons: false
+            font: monospace
+            help: Ommit style tag
       files:
         type: files
+    
