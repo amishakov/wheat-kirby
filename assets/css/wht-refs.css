@@ -22,14 +22,6 @@ wht-refs .content ol {
     color: var(--c-fgl);
 }
 
-wht-refs .links {
-    gap: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-/* wht-refs .refs {} */
-
 wht-refs .refs li:not(:first-child) {
     border-top: 1px solid var(--c-line);
     padding-top: var(--spacing-200);
