@@ -1,15 +1,13 @@
 <?php
     date_default_timezone_set('America/Toronto');
     $salt = rand();
-    $page_title = strval($page->seo()->toObject()->seo_title());
-    $page_desc = strval($page->seo()->toObject()->seo_description()); 
-    $page_img = $page->seo()->toObject()->seo_image()->toFile(); 
-    $site_title = strval($site->seo()->toObject()->seo_title());
-    $site_desc = strval($site->seo()->toObject()->seo_description());
-    $site_img = $site->seo()->toObject()->seo_image()->toFile();
+    $page_title = $page->seoTitle()->isNotEmpty() ? $page->seoTitle() : null;
+    $page_desc = $page->seoDescription()->isNotEmpty() ? $page->seoDescription() : null; 
+    $page_img = $page->seoImage()->isNotEmpty() ? $page->seoImage()->toFile() : null;
+    $site_img = $site->seoImage()->isNotEmpty() ? $site->seoImage()->toFile() : null;
 
     $title = null;
-    if (!empty($page_title)) {
+    if ($page_title) {
        $title = $page_title;
     } elseif (!$page->isHomePage()) {
         $title = $page->title() . " | " . $site->title();
@@ -18,14 +16,14 @@
     }
 
     $desc = null;
-    if (!empty($page_desc)) {
+    if ($page_desc) {
         $desc = $page_desc;
     } else {
          $desc = "";
     }
 
      $img = null;
-     if (!empty($page_img)) {
+     if ($page_img) {
         $img = $page_img->url();
     } elseif (!empty($site_img)) {
          $img = $site_img->url();
@@ -62,6 +60,6 @@
         <meta name="twitter:title" content="<?= $title ?>">
         <meta name="twitter:description" content="<?= $desc ?>">
         <meta name="twitter:image" content="<?= $img ?>">
-        <meta name="htmx-config" content='{"includeIndicatorStyles": false, "scrollBehavior":"auto", "defaultSettleDelay": 0, "defaultSwapDelay": 200}'>
+        <meta name="htmx-config" content='{"includeIndicatorStyles": false, "scrollBehavior":"auto", "defaultSettleDelay": 0, "defaultSwapDelay": 0}'>
     </head>
     <body class="top" hx-boost="true">

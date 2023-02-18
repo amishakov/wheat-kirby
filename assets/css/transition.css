@@ -1,4 +1,4 @@
-body #transition {
+/* body #transition {
 	background: white;
 	position: fixed;
 	inset: 0;
@@ -34,6 +34,4 @@ body.boosted:not([class*="htmx-"]) #transition {
 		opacity: 0;
 		visibility: hidden;
 	}
-}
-
-
+} */
