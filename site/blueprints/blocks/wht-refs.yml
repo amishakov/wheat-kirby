@@ -11,10 +11,12 @@ fields:
     fields:
       title:
         type: text
+        required: true
       subtext:
         type: writer
       url:
         type: url
+        required: true
   links:
     type: structure
     fields:

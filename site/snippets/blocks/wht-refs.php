@@ -12,11 +12,18 @@
             <?php endforeach ?>
             <?php endif ?>
         </div>
-        <ul>
+        <ul class="refs">
             <?php foreach ($block->items()->toStructure() as $item): ?>
              <li>
-                [todo]
-                <?php if ($subtext = $item->subtext()): ?><?php endif ?>
+
+                <?php if ($title = $item->title()): ?>
+                <a href="<?= $item->url() ?>"><?= $title ?></a>
+                <?php endif ?>
+
+                <?php if ($subtext = $item->subtext()): ?>
+                <sub><?= $subtext ?></sub>    
+                <?php endif ?>
+
              </li>
             <?php endforeach ?>
         </ul>
