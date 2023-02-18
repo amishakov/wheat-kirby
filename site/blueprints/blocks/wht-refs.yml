@@ -17,19 +17,3 @@ fields:
       url:
         type: url
         required: true
-  links:
-    type: structure
-    fields:
-      style:
-        type: select
-        empty: false
-        default: "btn"
-        width: 1/6
-        options:
-          - btn
-          - link
-      label:
-        type: text
-        width: 5/6
-      url:
-        type: text
