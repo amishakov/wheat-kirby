@@ -16,9 +16,9 @@ wht-refs .prose {
     max-width: 52ch;
 }
 
-wht-refs p,
-wht-refs ul,
-wht-refs ol {
+wht-refs .content p,
+wht-refs .content ul,
+wht-refs .content ol {
     color: var(--c-fgl);
 }
 
@@ -26,4 +26,31 @@ wht-refs .links {
     gap: 1rem;
     display: flex;
     align-items: center;
+}
+
+/* wht-refs .refs {} */
+
+wht-refs .refs li:not(:first-child) {
+    border-top: 1px solid var(--c-line);
+    padding-top: var(--spacing-200);
+}
+
+wht-refs .refs li {
+    padding-bottom: var(--spacing-200);
+}
+
+wht-refs .refs li > a {
+    font-size: var(--text-100);
+    font-family: var(--font-serif);
+}
+
+wht-refs .refs li sub {
+    display: block;
+    color: var(--c-fgl);
+    font-size: var(--text--100);
+    margin-top: var(--spacing-050);
+}
+
+wht-refs .refs li a {
+    text-decoration: underline;
 }
