@@ -1,6 +1,7 @@
 (function () {
 	"use strict";
 
+	crawl();
 	window.addEventListener("htmx:load", crawl);
 
 	function crawl() {
@@ -18,7 +19,10 @@
 		var linkUrl = a.href;
 		var currentDomain = currentUrl.split("/")[2];
 		var linkDomain = linkUrl.split("/")[2];
-		if (!linkDomain || currentDomain === linkDomain) {
+
+		if (linkUrl.includes("mailto:") || linkUrl.includes("tel:") || linkUrl.includes(".pdf")) {
+			return false;
+		} else if (!linkDomain || currentDomain === linkDomain) {
 			return true;
 		} else {
 			return false;
@@ -28,6 +32,7 @@
 	function setLinkAttr(a) {
 		if (!isSameDomain(a)) {
 			a.setAttribute("target", "_blank");
+			htmx.process(a);
 		}
 	}
 })();
