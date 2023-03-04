@@ -5,7 +5,7 @@ class SiteMenu extends HTMLElement {
 	}
 
 	connectedCallback() {
-		this.toggle = document.querySelector("#site-header button");
+		this.toggle = document.querySelector("#header button");
 		this.veil = this.querySelector(".veil");
 
 		this.toggle.addEventListener("click", () => {
