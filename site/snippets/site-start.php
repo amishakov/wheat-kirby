@@ -39,14 +39,7 @@
         <title><?= $title ?></title>
         <meta name="description" content="<?= $desc ?>">
 
-        <link rel="preload" href="/assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
-        <link rel="preload" href="/assets/fonts/ibm-plex-serif-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
- 
-        <link rel="stylesheet" href="/assets/css/compiled.css?v=<?= $salt ?>">
-        <script src="/assets/js/app/compiled.js?v=<?= $salt ?>" defer></script>
-        <script src="/assets/js/com/site-menu.js?v=<?= $salt ?>" defer></script>
-        <script src="/assets/js/com/btn-back.js?v=<?= $salt ?>" defer></script>
-        <script src="/assets/js/com/btn-copy.js?v=<?= $salt ?>" defer></script>
+        <?= snippet('assets') ?>
         
         <link rel="apple-touch-icon" sizes="180x180" href="<?= url('assets/images/apple-touch-icon.png') ?>">
         <link rel="icon" type="image/png" sizes="32x32" href="<?= url('assets/images/favicon-32x32.png') ?>">

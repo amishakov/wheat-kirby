@@ -2,7 +2,7 @@
 
 return [
     'home' => 'home',
-    'languages' => false,
+    'languages' => true,
     'date'  => [
         'handler' => 'intl',
     ],
@@ -54,26 +54,13 @@ return [
     'routes' => [
         [
             'pattern' => 'sitemap.xml',
+            'language' => '*',
             'action' => function () {
                 $pages = site()->pages()->index();
                 $ignore = kirby()->option('sitemap.ignore', ['error']);
                 $content = snippet('sitemap', compact('pages', 'ignore'), true);
                 return new Kirby\Cms\Response($content, 'application/xml');
             }            
-        ],
-        [
-            'pattern' => 'sitemap',
-            'action'  => function() {
-                return go('sitemap.xml', 301);
-            }
-        ],
-        [
-            'pattern' => 'time-of-day',
-            'action'  => function() {
-                $site = site();
-                $content = snippet('time-of-day', compact('site'), true);
-                return new Response($content, 'text/html');
-            }
         ]
     ],
 ];
