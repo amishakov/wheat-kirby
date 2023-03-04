@@ -24,20 +24,9 @@ site-menu .button {
 
 site-menu .dialog {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0 var(--gutter) var(--gutter) var(--gutter);
-    background-color:  var(--c-canvas);
-    border-radius: var(--radius-100) var(--radius-100) 0 0;
-
-    transform: translateY(10px);
-    transition-property: transform;
-    transition-duration: 400ms;
-}
-
-site-menu[open="true"] .dialog {
-    transform: translateY(0);
+    inset: 0;
+    padding: var(--gutter);
+    background-color: var(--c-bg);
 }
 
 site-menu nav a {
@@ -46,11 +35,3 @@ site-menu nav a {
     display: block;
     border-bottom: var(--border);
 }
-
-
-site-menu time-of-day {
-    align-items: center;
-    padding: var(--rhythm) var(--gutter);
-}
-
-

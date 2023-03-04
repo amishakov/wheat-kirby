@@ -1,42 +1,30 @@
 (function () {
 	"use strict";
-
 	crawl();
 	window.addEventListener("htmx:load", crawl);
-
 	function crawl() {
-		const links = document.querySelectorAll("a");
-
-		links.forEach((a) => {
+		document.querySelectorAll("a").forEach((a) => {
 			if (!!a) {
-				setLinkAttr(a);
+				const currentUrl = window.location.href;
+				const linkUrl = a.href;
+				const currentDomain = currentUrl.split("/")[2];
+				const linkDomain = linkUrl.split("/")[2];
+				if (
+					linkUrl.includes("mailto:") ||
+					linkUrl.includes("tel:") ||
+					linkUrl.includes(".pdf")
+				) {
+					a.setAttribute("target", "_blank");
+					a.setAttribute("rel", "noopener")
+					htmx.process(a);
+				} else if (!linkDomain || currentDomain === linkDomain) {
+					// Do nothing
+				} else {
+					a.setAttribute("target", "_blank");
+					a.setAttribute("rel", "noopener")
+					htmx.process(a);
+				}
 			}
 		});
-	}
-
-	function isSameDomain(a) {
-		var currentUrl = window.location.href;
-		var linkUrl = a.href;
-		var currentDomain = currentUrl.split("/")[2];
-		var linkDomain = linkUrl.split("/")[2];
-
-		if (
-			linkUrl.includes("mailto:") ||
-			linkUrl.includes("tel:") ||
-			linkUrl.includes(".pdf")
-		) {
-			return false;
-		} else if (!linkDomain || currentDomain === linkDomain) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	function setLinkAttr(a) {
-		if (!isSameDomain(a)) {
-			a.setAttribute("target", "_blank");
-			htmx.process(a);
-		}
 	}
 })();

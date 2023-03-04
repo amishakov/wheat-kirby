@@ -14,7 +14,16 @@
     margin-right: auto;
 }
 
-/* #header nav .link {} */
+#header nav .link {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    #header nav .link {
+        display: block;
+    }
+}
+
 
 #header nav .langswitcher {
     color: var(--c-fgl);
