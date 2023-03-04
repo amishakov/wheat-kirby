@@ -16,7 +16,9 @@
 
 /* #header nav .link {} */
 
-/* #header nav .langswitcher {} */
+#header nav .langswitcher {
+    color: var(--c-fgl);
+}
 
 #header nav button {
     display: block;
