@@ -7,7 +7,7 @@ tabs:
       content:
         type: fields
         fields:
-          menu_links:
+          headerLinks:
             type: structure
             fields:
               label: 

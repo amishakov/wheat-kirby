@@ -2,7 +2,7 @@
 
 return [
     'home' => 'home',
-    'languages' => false,
+    'languages' => true,
     'date'  => [
         'handler' => 'intl',
     ],

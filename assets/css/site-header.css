@@ -2,10 +2,28 @@
 
 #header nav {
     display: flex;
-    justify-content: space-between;
     max-width: var(--ctn-max-width);
     padding: var(--ctn-padding);
     width: 100%;
     align-items: center;
     margin: 0 auto;
+    gap: 1rem;
+}
+
+#header nav .logo {
+    margin-right: auto;
+}
+
+/* #header nav .link {} */
+
+/* #header nav .langswitcher {} */
+
+#header nav button {
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    #header nav button {
+        display: none;
+    }
 }

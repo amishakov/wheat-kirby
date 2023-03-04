@@ -20,7 +20,11 @@
 		var currentDomain = currentUrl.split("/")[2];
 		var linkDomain = linkUrl.split("/")[2];
 
-		if (linkUrl.includes("mailto:") || linkUrl.includes("tel:") || linkUrl.includes(".pdf")) {
+		if (
+			linkUrl.includes("mailto:") ||
+			linkUrl.includes("tel:") ||
+			linkUrl.includes(".pdf")
+		) {
 			return false;
 		} else if (!linkDomain || currentDomain === linkDomain) {
 			return true;
