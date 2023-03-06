@@ -1,37 +1,37 @@
 site-menu {
-    visibility: hidden;
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    z-index: 9999;
+	background: var(--c-bg);
+	display: none;
+	inset: 0;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
 }
 
-site-menu[open="true"] {
-    visibility: visible;
+site-menu[data-state="true"] {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-site-menu .veil {
-    position: absolute;
-    inset: 0;
-    background: var(--c-veil);
+site-menu button {
+	position: absolute;
+	right: 1.5rem;
+	top: 1.5rem;
 }
 
-site-menu .button {
-    width: 100%;
-    display: flex;
-    padding: var(--rhythm) 0;
+site-menu nav {
+	display: grid;
+	gap: 1rem;
 }
 
-site-menu .dialog {
-    position: absolute;
-    inset: 0;
-    padding: var(--gutter);
-    background-color: var(--c-bg);
+site-menu a {
+	border-bottom: var(--border);
+	display: block;
+	padding: 2rem var(--gutter);
+	width: 100%;
 }
 
-site-menu nav a {
-    padding: 2rem var(--gutter);
-    width: 100%;
-    display: block;
-    border-bottom: var(--border);
+site-menu .ls {
+	color: var(--c-fgl);
 }

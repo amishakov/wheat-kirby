@@ -1,37 +1,41 @@
 class SiteMenu extends HTMLElement {
 	constructor() {
 		super();
-		this.open = false;
+		this.dataset.state = "false"
 	}
 
 	connectedCallback() {
-		this.toggle = document.querySelector("#header button");
+		this.on = document.querySelector("#header button");
+		this.off = document.querySelector("site-menu button");
 		this.veil = this.querySelector(".veil");
 
-		this.toggle.addEventListener("click", () => {
-			this.open = true;
+		this.on.addEventListener("click", () => {
+			this.state = true;
 		});
 
-		this.veil.addEventListener("click", () => {
-			this.open = false;
+		this.off.addEventListener("click", () => {
+			this.state = false;
 		});
 
 		window.addEventListener("keydown", (event) => {
-			if (event.key === "Escape" && this.open) {
-				this.open = false;
+			if (event.key === "Escape" && this.state) {
+				this.state = false;
 			}
 		});
 	}
 
-	set open(value) {
-		this._open = value;
-		requestAnimationFrame(() => {
-			this.setAttribute("open", this._open ? "true" : "false");
-		});
+	set state(state) {
+		this.dataset.state = state;
+		if (state == true) {
+			scrollOff();
+		} else {
+			scrollOn();
+		}
 	}
 
-	get open() {
-		return this._open;
+	get state() {
+		return this.dataset.state;
 	}
+
 }
 customElements.define("site-menu", SiteMenu);
