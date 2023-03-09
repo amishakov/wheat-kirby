@@ -23,16 +23,12 @@
 	});
 })();
 
-function toggleScroll() {
-	document.body.classList.toggle("disable-scroll");
+function scrollOn() {
+	document.body.style.overflowY = 'auto';
 }
 
-function toggleScrollOn() {
-	document.body.classList.remove("disable-scroll");
-}
-
-function toggleScrollOff() {
-	document.body.classList.add("disable-scroll");
+function scrollOff() {
+	document.body.style.overflowY = 'hidden';
 }
 
 function scrollToTop() {
@@ -40,5 +36,5 @@ function scrollToTop() {
 }
 
 document.body.addEventListener("htmx:load", (event) => {
-	toggleScrollOn();
+	scrollOn();
 });
