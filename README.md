@@ -4,6 +4,17 @@
 
 Wheat is the starter-kit used to bootstrap most of Calotte's  projects. It's filled with common patterns and basic stuff you see all around the Web. It is an ever evolving project where we upstream everything we think could be abstracted and reused for futur projects. While we do our best to keep the site usable as-is, it is not meant as a "theme" you can just use out of the box.
 
+## What you'll need
+
+Nothing fancy here. So once you have your favorite code editor in hands and a local environment running PHP 8.1, you are pretty much good to go. But here is our list of things and services we use from development to production.
+
+- VScode
+- Github
+- XAMPP of any PHP environment you like
+- Node / npm
+- DigitalOcean for hosting
+- Ploi.io for server, site and devOps.
+
 ## What's in it?
 
 We try to keep Wheat (and everything we do) as light and simple as possible. The obvious main parts of the project are:
@@ -19,7 +30,9 @@ We try to keep Wheat (and everything we do) as light and simple as possible. The
   - Loading
   - Menus
 - WebComponents for everything we can.
-- A lot of CSS
+- Some CSS
+
+We use `npm` to bundle some javascript and css but that's pretty much it. Everything is mostly done by hand as long as it's manageable.
 
 ## Installation
 
@@ -33,7 +46,7 @@ We try to keep Wheat (and everything we do) as light and simple as possible. The
 
 [todo]
 
-## Initial depoloyment
+## Initial deployment
 
 [todo]
 
@@ -51,7 +64,7 @@ We try to keep Wheat (and everything we do) as light and simple as possible. The
 
 ## Kirby
 
-Wheat being a starter site for Kirby CMS, we assume you already know quite a lot about it and won't go into details about it. Nevertheless, here's a bunch of links that might be usesul for everyone.
+Wheat being a starter site for Kirby CMS, we assume you already know quite a bit about the platform and won't go into details about it. Nevertheless, here's a bunch of links that might be usesul for everyone.
 
 - **[getkirby.com](https://getkirby.com)** – Get to know the CMS.
 - **[Documentation](https://getkirby.com/docs/guide)** – Read the official guide, reference and cookbook recipes.
