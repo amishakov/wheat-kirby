@@ -1,37 +1,17 @@
-/* body #transition {
-	background: white;
-	position: fixed;
-	inset: 0;
-	visibility: hidden;
+body[class*="htmx-"] {
+	transition-property: opacity, transform;
+	transition-duration: 600ms;
+	transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.htmx-request,
+body.htmx-swapping {
+	transform: translateY(10px);
 	opacity: 0;
-	pointer-events: none;
-	animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+
 }
 
-body.boosted[class*="htmx-"] #transition {
-	animation-name: page-out;
-	animation-duration: 200ms;
-	animation-fill-mode: forwards;
-}
-
-body.boosted:not([class*="htmx-"]) #transition {
-	visibility: visible;
+body.htmx-settling {
+	transform: translateY(0);
 	opacity: 1;
-	animation-name: page-in;
-	animation-duration: 300ms;
-	animation-fill-mode: forwards;
 }
-
-@keyframes page-out {
-	to {
-		opacity: 1;
-		visibility: visible;
-	}
-}
-
-@keyframes page-in {
-	to {
-		opacity: 0;
-		visibility: hidden;
-	}
-} */
