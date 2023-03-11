@@ -1,34 +1,72 @@
-<img src="http://getkirby.com/assets/images/github/plainkit.jpg" width="300">
+# Wheat
 
+## What is it?
 
-**Kirby: the CMS that adapts to any project, loved by developers and editors alike.**  
-The Plainkit is a minimal Kirby setup with the basics you need to start a project from scratch. It is the ideal choice if you are already familiar with Kirby and want to start step-by-step.
+Wheat is the starter-kit used to bootstrap most of Calotte's  projects. It's filled with common patterns and basic stuff you see all around the Web. It is an ever evolving project where we upstream everything we think could be abstracted and reused for futur projects. While we do our best to keep the site usable as-is, it is not meant as a "theme" you can just use out of the box.
 
-You can learn more about Kirby at [getkirby.com](https://getkirby.com).
+## What you'll need
 
-### Try Kirby for free  
-You can try Kirby and the Plainkit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
+Nothing fancy here. So once you have your favorite code editor in hands and a local environment running PHP 8.1, you are pretty much good to go. But here is our list of things and services we use from development to production.
 
-### Get going
-Read our guide on [how to get started with Kirby](https://getkirby.com/docs/guide/quickstart).
+- VScode
+- Github
+- XAMPP of any PHP environment you like
+- Node / npm
+- DigitalOcean for hosting
+- Ploi.io for server, site and devOps.
 
-You can [download the latest version](https://github.com/getkirby/plainkit/archive/main.zip) of the Plainkit.  
-If you are familiar with Git, you can clone Kirby's Plainkit repository from Github.
+## What's in it?
 
-    git clone https://github.com/getkirby/plainkit.git
+We try to keep Wheat (and everything we do) as light and simple as possible. The obvious main parts of the project are:
 
-## What's Kirby?
+- Kirby CMS
+- HTMX
+- Some javascript we use all the time for stuff like:
+  - HTMX 404 and cache utilities
+  - Scroll managment
+  - Link attributes
+  - Image loading
+  - Intersecting
+  - Loading
+  - Menus
+- WebComponents for everything we can.
+- Some CSS
+
+We use `npm` to bundle some javascript and css but that's pretty much it. Everything is mostly done by hand as long as it's manageable.
+
+## Installation
+
+[todo]
+
+## Github
+
+[todo]
+
+## Ploi.io
+
+[todo]
+
+## Initial deployment
+
+[todo]
+
+## Deployments
+
+[todo]
+
+## Cloudflare
+
+[todo]
+
+## Fathom Analytics (Trough Zaraz)
+
+[todo]
+
+## Kirby
+
+Wheat being a starter site for Kirby CMS, we assume you already know quite a bit about the platform and won't go into details about it. Nevertheless, here's a bunch of links that might be usesul for everyone.
+
 - **[getkirby.com](https://getkirby.com)** – Get to know the CMS.
-- **[Try it](https://getkirby.com/try)** – Take a test ride with our online demo. Or download one of our kits to get started.
 - **[Documentation](https://getkirby.com/docs/guide)** – Read the official guide, reference and cookbook recipes.
-- **[Issues](https://github.com/getkirby/kirby/issues)** – Report bugs and other problems.
-- **[Feedback](https://feedback.getkirby.com)** – You have an idea for Kirby? Share it.
-- **[Forum](https://forum.getkirby.com)** – Whenever you get stuck, don't hesitate to reach out for questions and support.
 - **[Discord](https://chat.getkirby.com)** – Hang out and meet the community.
-- **[Mastodon](https://mastodon.social/@getkirby)** – Spread the word.
-- **[Instagram](https://www.instagram.com/getkirby/)** – Share your creations: #madewithkirby.
-
----
-
-© 2009-2022 Bastian Allgeier  
-[getkirby.com](https://getkirby.com) · [License agreement](https://getkirby.com/license)
+- **[Forum](https://forum.getkirby.com)** – Whenever you get stuck, don't hesitate to reach out for questions and support.
