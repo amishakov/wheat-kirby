@@ -36,23 +36,22 @@ We use `npm` to bundle some javascript and css but that's pretty much it. Everyt
 
 ## Installation
 
-[todo]
+[wip]
 
-## Github
+New repo from this one, change names, blip bloup blip, you're done.
+The `content` folder is commited by default. You'll usually want to ignore it at some point in development. When you are ready, just uncomment the `/content` line in your `.gitignore` file.
+Make sure you create always work in the `develop` branch. The `main` (or `master`) will serve as our production branch.
 
-[todo]
+## Initial deployment & Ploi
 
-## Ploi.io
-
-[todo]
-
-## Initial deployment
-
-[todo]
+Create a new site and enter your domain. In advanced settings, make sure your public folder and site root are set to `/`.
+Select the Kirby CMS config from the dropdown.
+Once your site is created, you can setup deployment using github. At that point it's just a matter of choosing the right branch and online you go.
 
 ## Deployments
 
-[todo]
+You can deploy manually (by clicking Deploy) or setup automatic deployment in Ploy -> your site -> repo config.
+Once setup, Ploi will deploy your site every time you complete a pull request to `main`.
 
 ## Cloudflare
 
