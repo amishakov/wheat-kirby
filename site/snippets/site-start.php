@@ -53,7 +53,7 @@
         <meta name="twitter:title" content="<?= $title ?>">
         <meta name="twitter:description" content="<?= $desc ?>">
         <meta name="twitter:image" content="<?= $img ?>">
-        <meta name="htmx-config" content='{"includeIndicatorStyles": false, "scrollBehavior":"auto", "defaultSettleDelay": 0, "defaultSwapDelay": 0}'>
+        <meta name="htmx-config" content='{"includeIndicatorStyles": false, "scrollBehavior":"auto"}'>
         <?php if ($scripts = $site->scripts()): ?>
         <?= $scripts ?>
         <?php endif ?>
@@ -63,4 +63,4 @@
         </style>
         <?php endif ?>
     </head>
-    <body class="top" hx-boost="true">
+    <body class="top" hx-boost="true" hx-indicator="body" hx-swap="innerHTML swap:0.6s settle:0.6s">
