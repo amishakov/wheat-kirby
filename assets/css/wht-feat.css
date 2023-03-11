@@ -21,8 +21,6 @@ wht-feat .ctn {
 wht-feat .prose {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 52ch;
 }
 
 wht-feat p,
