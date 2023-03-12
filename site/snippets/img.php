@@ -1,5 +1,5 @@
 <?php if ($image): ?>
-<figure style="--aspect-ratio:<?= $image->width() . '/' . $image->height() ?>;">
+<figure style="--aspect-ratio:<?= $image->width() . '/' . $image->height() ?>;" is="lazy-img">
     <img
         alt="<?= $image->alt() ?>"
         src="<?= $image->resize(300)->url() ?>"

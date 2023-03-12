@@ -5,13 +5,14 @@
 @import "btn.css";
 @import "fonts.css";
 @import "img.css";
+@import "lazy-video.css";
 @import "prose.css";
 @import "site-footer.css";
 @import "site-header.css";
 @import "site-menu.css";
 @import "spinner.css";
 @import "utils.css";
-@import "transition.css";
+@import "indicator.css";
 
 /* PAGES */
 @import "default.css";
