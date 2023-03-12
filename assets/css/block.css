@@ -1,10 +1,6 @@
 .block {
     display: block;
     position: relative;
-    scroll-margin-top: var(--spacing-600);
-}
-
-.block + .block,
-.block:first-child  {
     margin-top: var(--spacing-600);
+    scroll-margin-top: var(--spacing-600);
 }

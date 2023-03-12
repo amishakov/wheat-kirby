@@ -1,6 +1,6 @@
 /* FRAMEWORK */
 @import "reset.css";
-@import "variables.css";
+@import "theme.css";
 @import "ctn.css";
 @import "btn.css";
 @import "fonts.css";
@@ -24,6 +24,7 @@
 @import "wht-feats.css";
 @import "wht-h.css";
 @import "wht-img.css";
+@import "wht-vid.css";
 @import "wht-refs.css";
 
 /* MISC */
