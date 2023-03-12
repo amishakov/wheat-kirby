@@ -1,17 +1,41 @@
-body[class*="htmx-"] {
-	transition-property: opacity, transform;
-	transition-duration: 600ms;
+#indicator {
+	position: fixed;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	visibility: hidden;
+	opacity: 0;
+	transition-property: opacity, visibility;
+	transition-duration: 400ms;
 	transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-body.htmx-request,
-body.htmx-swapping {
-	transform: translateY(10px);
-	opacity: 0;
-
+body.htmx-request #indicator,
+body.htmx-swapping #indicator {
+	visibility: visible;
+	opacity: 1;
 }
 
-body.htmx-settling {
-	transform: translateY(0);
+body.htmx-settling #indicator {
+	visibility: hidden;
+	opacity: 0;
+}
+
+#indicator .spinner,
+#indicator .spinner {
+	transition-duration: 0;
+	transition-delay: 0;
+	transition-property: visibility, opacity;
+	visibility: hidden;
+	opacity: 0;
+}
+
+body.htmx-request #indicator .spinner,
+body.htmx-swapping #indicator .spinner {
+	transition-duration: 0.4s;
+	transition-delay: 1.5s;
+	visibility: visible;
 	opacity: 1;
 }

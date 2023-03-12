@@ -1,110 +1,61 @@
 *,
-*::after,
-*::before {
-	border-width: 0;
-	border-style: solid;
-	border-color: currentColor;
+*::before,
+*::after {
 	box-sizing: border-box;
+}
+
+* {
 	margin: 0;
 	padding: 0;
 }
 
-a {
-	color: currentColor;
-	text-decoration: none;
-}
-
-audio,
-canvas,
-embed,
-figure,
-iframe,
-img,
-object,
-svg,
-video {
-	display: block;
-	vertical-align: middle;
+html,
+body {
+	height: 100%;
 }
 
 body {
-	overflow-x: hidden;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
 }
 
-button {
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
 	font: inherit;
-	background: none;
-	color: currentColor;
-	cursor: pointer;
-	line-height: inherit;
-}
-button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
 }
 
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6, 
-cite {
-	font-size: inherit;
-	font-weight: inherit;
-	font-style: inherit;
+h6 {
+	overflow-wrap: break-word;
 }
 
-html {
-	font-family: var(--font-sans);
-	line-height: var(--leading-normal);
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
-img,
-svg,
-video {
-	max-width: 100%;
-	width: 100%;
-	height: auto;
-	transform-style: preserve-3d;
-}
-
-input {
-	font: inherit;
-}
-
-ol,
-ul {
+ul,
+ol {
 	list-style: none;
 }
 
-strong,
-b {
-	font-weight: var(--font-bold);
-}
-
-summary {
-	cursor: pointer;
-}
-summary:focus {
-	outline: 0;
-}
-summary:focus-visible {
-	outline: solid;
-	outline: 5px auto -webkit-focus-ring-color;
-}
-
-table {
-	font-variant-numeric: tabular-nums;
-	border-spacing: 0;
-	width: 100%;
-}
-th,
-td {
-	text-align: left;
-	vertical-align: top;
-}
-
-time {
-	font-feature-settings: "tnum" on,"lnum" on;
+#page {
+	/* isolation: isolate; */
 }

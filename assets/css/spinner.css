@@ -4,30 +4,25 @@
 	animation-name: spinner;
     box-sizing: border-box;
 	animation-timing-function: linear;
-	border-bottom: 2px solid var(--c-fgl);
-	border-left: 2px solid var(--c-text);
+	border-bottom: 0.3rem solid lightgray;
+	border-left: 0.3rem solid black;
 	border-radius: 100%;
-	border-right: 2px solid var(--c-fgl);
-	border-top: 2px solid var(--c-fgl);
+	border-right: 0.3rem solid lightgray;
+	border-top: 0.3rem solid lightgray;
 	box-sizing: border-box;
 	color: var(--c-fg);
 	content: "";
-	height: 1rem;
-	opacity: 0;
+	height: 3rem;
 	transform: translateZ(0);
-	visibility: hidden;
-	width: 1rem;
+	width: 3rem;
+	z-index: 1;
 }
 
 @keyframes spinner {
 	0% {
-		opacity: 1;
 		transform: rotate(0deg);
-		visibility: visible;
 	}
 	100% {
-		opacity: 1;
 		transform: rotate(360deg);
-		visibility: visible;
 	}
 }
