@@ -18,10 +18,10 @@ body.htmx-swapping #indicator {
 	opacity: 1;
 }
 
-body.htmx-settling #indicator {
+/* body.htmx-settling #indicator {
 	visibility: hidden;
 	opacity: 0;
-}
+} */
 
 #indicator .spinner,
 #indicator .spinner {
