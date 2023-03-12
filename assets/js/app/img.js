@@ -10,6 +10,7 @@
 			}
 		});
 	};
+	
 	const ObserveMutation = function () {
 		let o = new MutationObserver(SetImgBehavior);
 		o.observe(document.body, { childList: true, subtree: true });
@@ -23,7 +24,7 @@
 				el.setAttribute("src", src);
 			});
 		});
-	}
+	};
 
 	SetImgBehavior();
 	ObserveMutation();

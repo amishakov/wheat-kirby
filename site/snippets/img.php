@@ -7,7 +7,7 @@
         width="<?= $image->width() ?>"
         height="<?= $image->height() ?>"
         loading="lazy"
-    >    
+    >
+    <img-ph></img-ph>
 </figure>
-
 <?php endif ?>

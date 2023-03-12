@@ -1,42 +1,17 @@
-img[loading="lazy"]:not([loaded]) {
-	opacity: 0;
-}
-
-img[loading="lazy"][loaded] {
-	animation-name: lazyImg;
-	animation-duration: 500ms;
-	animation-delay: 0ms;
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
-}
-
 figure:has(img[loading="lazy"]) {
+	position: relative;
 	aspect-ratio: var(--aspect-ratio);
 }
 
-figure:has(img[loading="lazy"]:not([loaded])) {
-	background: var(--c-ph);
-	animation: lazyImgLoading 2s infinite;
-	border-radius: 1rem;
+figure img[loading="lazy"] + img-ph  {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: #f1f1f1;
+	transition: opacity 0.6s;
+	transition-delay: 0.6s;
 }
 
-@keyframes lazyImg {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes lazyImgLoading {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.5;
-	}
-	100% {
-		opacity: 1;
-	}
+figure img[loading="lazy"][loaded] + img-ph {
+	opacity: 0;
 }
