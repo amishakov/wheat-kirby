@@ -8,8 +8,9 @@
 	visibility: hidden;
 	opacity: 0;
 	transition-property: opacity, visibility;
-	transition-duration: 0.4s;
+	transition-duration: 0.2s;
 	transition-timing-function: ease-in-out;
+	z-index: 9999;
 }
 
 body.htmx-request #indicator,
@@ -30,7 +31,7 @@ body.htmx-swapping #indicator {
 body.htmx-request #indicator .spinner,
 body.htmx-swapping #indicator .spinner {
 	transition-duration: 0.4s;
-	transition-delay: 1.5s;
+	transition-delay: 1s;
 	visibility: visible;
 	opacity: 1;
 }
