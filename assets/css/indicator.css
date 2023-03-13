@@ -8,13 +8,13 @@
 	visibility: hidden;
 	opacity: 0;
 	transition-property: opacity, visibility;
-	transition-duration: 0.2s;
-	transition-timing-function: ease-in-out;
+	transition-duration: 0.4s;
 	z-index: 9999;
 }
 
 body.htmx-request #indicator,
-body.htmx-swapping #indicator {
+body.htmx-swapping #indicator,
+body.htmx-settling #indicator {
 	visibility: visible;
 	opacity: 1;
 }

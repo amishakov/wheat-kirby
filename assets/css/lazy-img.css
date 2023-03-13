@@ -1,4 +1,5 @@
 lazy-img {
+	display: block;
 	position: relative;
 	aspect-ratio: var(--aspect-ratio);
 }
@@ -9,8 +10,8 @@ lazy-img lazy-img-ph  {
 	pointer-events: none;
 	background: #f1f1f1;
 	transition-property: opacity;
-	transition-duration: 0.2s;
-	transition-delay: 0.4s;
+	transition-duration: 0.4s;
+	transition-delay: 0.2s;
 }
 
 lazy-img img[loaded] + lazy-img-ph {
