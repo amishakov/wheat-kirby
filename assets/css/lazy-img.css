@@ -1,9 +1,9 @@
-figure[is="lazy-img"] {
+lazy-img {
 	position: relative;
 	aspect-ratio: var(--aspect-ratio);
 }
 
-figure[is="lazy-img"] img-ph  {
+lazy-img lazy-img-ph  {
 	position: absolute;
 	inset: 0;
 	pointer-events: none;
@@ -13,6 +13,6 @@ figure[is="lazy-img"] img-ph  {
 	transition-delay: 0.4s;
 }
 
-figure[is="lazy-img"] img[loaded] + img-ph {
+lazy-img img[loaded] + lazy-img-ph {
 	opacity: 0;
 }
