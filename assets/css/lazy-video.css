@@ -10,7 +10,7 @@ lazy-video-ph  {
 	background: #f1f1f1;
 	transition-property: opacity;
 	transition-duration: 0.2s;
-	transition-delay: 0.4s;
+	transition-delay: 0.6s;
 }
 
 lazy-video[loaded] lazy-video-ph {
