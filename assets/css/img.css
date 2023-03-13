@@ -9,8 +9,8 @@ figure[is="lazy-img"] img-ph  {
 	pointer-events: none;
 	background: #f1f1f1;
 	transition-property: opacity;
-	transition-duration: 0.4s;
-	transition-delay: 0.2s;
+	transition-duration: 0.2s;
+	transition-delay: 0.4s;
 }
 
 figure[is="lazy-img"] img[loaded] + img-ph {

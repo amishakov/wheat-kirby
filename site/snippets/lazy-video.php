@@ -1,4 +1,4 @@
-<figure style="--aspect-ratio:<?= $poster->width() . '/' . $poster->height() ?>;" is="lazy-video">
+<lazy-video style="--aspect-ratio:<?= $poster->width() . '/' . $poster->height() ?>;">
     <video 
         data-poster="<?= $poster->url() ?>" 
         autoplay 
@@ -8,5 +8,5 @@
         disableremoteplayback>
         <source type="video/mp4" data-src="<?= $video->url() ?>">
     </video>
-    <video-ph></video-ph>
-</figure>
+    <lazy-video-ph></lazy-video-ph>
+</lazy-video>
