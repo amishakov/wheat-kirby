@@ -10,11 +10,11 @@ class LazyVideo extends HTMLElement {
 		this.video.setAttribute("poster", this.video.dataset.poster);
 		this.source.setAttribute("src", this.source.dataset.src);
         this.video.load();
-        this.setAttribute("loaded", "");
-
-        this.video.removeAttribute("data-poster");
-        this.source.removeAttribute("data-src");
-
+		setTimeout(() => {
+			this.setAttribute("loaded", "");
+			this.video.removeAttribute("data-poster");
+			this.source.removeAttribute("data-src");
+		}, 100);
 	}
 }
 customElements.define("lazy-video", LazyVideo);
