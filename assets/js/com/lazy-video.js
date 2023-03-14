@@ -4,17 +4,27 @@ class LazyVideo extends HTMLElement {
 	}
 
 	connectedCallback() {
-		this.video = this.querySelector("video");
-		this.source = this.video.querySelector("source");
-        this.ph = this.querySelector("lazy-video-ph");
-		this.video.setAttribute("poster", this.video.dataset.poster);
-		this.source.setAttribute("src", this.source.dataset.src);
-        this.video.load();
-		setTimeout(() => {
-			this.setAttribute("loaded", "");
-			this.video.removeAttribute("data-poster");
-			this.source.removeAttribute("data-src");
-		}, 100);
+		const video = this.querySelector("video");
+		const source = video.querySelector("source");
+		const ph = this.querySelector("lazy-video-ph");
+
+		let lazyVideoObserver = new IntersectionObserver(function (
+			entries,
+			observer
+		) {
+			entries.forEach(function (el) {
+				if (el.isIntersecting) {
+					video.setAttribute("poster", video.dataset.poster);
+					source.setAttribute("src", source.dataset.src);
+					video.load();
+					el.target.setAttribute("loaded", "");
+					video.removeAttribute("data-poster");
+					source.removeAttribute("data-src");
+					lazyVideoObserver.unobserve(el.target);
+				}
+			});
+		});
+		lazyVideoObserver.observe(this);
 	}
 }
 customElements.define("lazy-video", LazyVideo);
