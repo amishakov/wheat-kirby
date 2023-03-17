@@ -12,9 +12,9 @@
 	box-sizing: border-box;
 	color: var(--c-fg);
 	content: "";
-	height: 3rem;
+	height: 2.5rem;
 	transform: translateZ(0);
-	width: 3rem;
+	width: 2.5rem;
 	z-index: 1;
 }
 

@@ -1,5 +1,5 @@
-#indicator {
-	position: fixed;
+.indicator {
+	position: absolute;
 	inset: 0;
 	display: flex;
 	align-items: center;
@@ -12,24 +12,25 @@
 	z-index: 9999;
 }
 
-body.htmx-request #indicator,
-body.htmx-swapping #indicator,
-body.htmx-settling #indicator {
-	visibility: visible;
-	opacity: 1;
+#page > .indicator {
+	position: fixed;
 }
 
-#indicator .spinner,
-#indicator .spinner {
-	transition-duration: 0;
-	transition-delay: 0;
+[class*="htmx"] .indicator {
+	opacity: 1;
+	visibility: visible;
+}
+
+.indicator .spinner {
+	transition-duration: 0s;
+	transition-delay: 0s;
 	transition-property: visibility, opacity;
 	visibility: hidden;
 	opacity: 0;
 }
 
-body.htmx-request #indicator .spinner,
-body.htmx-swapping #indicator .spinner {
+.htmx-request .indicator .spinner,
+.htmx-swapping .indicator .spinner {
 	transition-duration: 0.4s;
 	transition-delay: 1s;
 	visibility: visible;
