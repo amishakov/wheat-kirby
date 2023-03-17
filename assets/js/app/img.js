@@ -10,7 +10,6 @@
 			}
 		});
 	};
-	
 	const ObserveMutation = function () {
 		let o = new MutationObserver(SetImgBehavior);
 		o.observe(document.body, { childList: true, subtree: true });
@@ -23,8 +22,11 @@
 				el.removeAttribute("src");
 				el.setAttribute("src", src);
 			});
+			document.querySelectorAll("video[autoplay]").forEach((v) => {
+				v.load();
+			});
 		});
-	};
+	}
 
 	SetImgBehavior();
 	ObserveMutation();
