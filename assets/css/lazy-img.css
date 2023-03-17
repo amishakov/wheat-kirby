@@ -1,10 +1,10 @@
-lazy-img {
+figure:has(img[loading="lazy"]) {
 	display: block;
 	position: relative;
 	aspect-ratio: var(--aspect-ratio);
 }
 
-lazy-img lazy-img-ph  {
+figure:has(img[loading="lazy"]:not(loaded))  {
 	position: absolute;
 	inset: 0;
 	pointer-events: none;
