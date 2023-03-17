@@ -14,10 +14,11 @@
 <?php if ($dev = Cookie::exists('dev')): ?>
 <link rel="stylesheet" href="/assets/css/index.css?v=<?= $salt ?>">
 <?php else: ?>
-<link rel="stylesheet" href="/assets/css/compiled.css?v=<?= $salt ?>">
+<link rel="stylesheet" href="/assets/css/app.css?v=<?= $salt ?>">
 <?php endif ?>
 
-<script src="/assets/js/app/compiled.js?v=<?= $salt ?>" defer></script>
+<script src="/assets/js/app/app.js?v=<?= $salt ?>" defer></script>
+
 <script src="/assets/js/com/site-menu.js?v=<?= $salt ?>" defer></script>
 <script src="/assets/js/com/lazy-video.js?v=<?= $salt ?>" defer></script>
 

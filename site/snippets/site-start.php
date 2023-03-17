@@ -63,6 +63,6 @@
         </style>
         <?php endif ?>
     </head>
-    <body class="top" hx-boost="true" hx-indicator="body" hx-swap="innerHTML swap:0.2s">
+    <body class="top" hx-boost="true" hx-indicator="body" hx-swap="innerHTML swap:0.4s">
         <div id="page" class="<?= $page->template() ?>">
             <?= snippet('site-header') ?>
