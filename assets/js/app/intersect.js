@@ -4,9 +4,9 @@
 	const Observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
-				entry.target.classList.add("in");
+				entry.target.classList.add("_i");
 			} else {
-				entry.target.classList.remove("in");
+				entry.target.classList.remove("_i");
 			}
 		});
 	});	

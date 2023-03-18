@@ -20,7 +20,5 @@
 <?php endif ?>
 
 <script src="/assets/js/app/app.js?v=<?= $salt ?>" defer></script>
-
 <script src="/assets/js/com/site-menu.js?v=<?= $salt ?>" defer></script>
-<script src="/assets/js/com/lazy-video.js?v=<?= $salt ?>" defer></script>
 

@@ -1,8 +1,12 @@
 (function () {
 	"use strict";
+	const l = document.querySelector("#loading");
+	l.addEventListener("transitionend", () => {
+		l.remove();
+	});
 	window.addEventListener("load", () => {
 		setTimeout(() => {
-			document.body.classList.add("loaded");
-		}, 3000);
+			document.body.classList.add("_l");
+		}, 2000);
 	});
 })();
