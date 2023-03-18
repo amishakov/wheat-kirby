@@ -7,6 +7,6 @@
 	window.addEventListener("load", () => {
 		setTimeout(() => {
 			document.body.classList.add("_l");
-		}, 2000);
+		}, 0);
 	});
 })();
