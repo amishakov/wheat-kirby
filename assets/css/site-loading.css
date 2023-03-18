@@ -7,32 +7,11 @@
     align-items: center;
     justify-content: center;
     transition: all 0.4s;
+    flex-direction: column;
+    gap: 10px;    
 }
 
-#loading span {
-    animation: loading 1.5s infinite;
-}
-
-.loaded #loading {
+._l #loading {
     opacity: 0;
     visibility: hidden;
-}
-
-@keyframes loading {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    30% {
-        transform: translate(0);
-        opacity: 1;
-    }
-    70% {
-        transform: translate(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
 }
