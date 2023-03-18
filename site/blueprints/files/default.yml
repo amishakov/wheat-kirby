@@ -7,7 +7,7 @@ sections:
         type: text
       credits:
         type: text
-        help: Credits might not be displayed and is context dependent.
+        help: Credits might not be displayed.
       caption:
         type: text
-        help: Caption might not be displayed and is context dependent.
+        help: Caption might not be displayed.

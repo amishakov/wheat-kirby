@@ -5,6 +5,5 @@
     srcset="<?= $image->srcset('webp') ?>"
     width="<?= $image->resize(1800)->width() ?>"
     height="<?= $image->resize(1800)->height() ?>"
-    loading="lazy"
->
+    loading="lazy">
 <?php endif ?>
