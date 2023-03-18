@@ -16,6 +16,5 @@
         <span style="--index:4;">a</span>
         <span style="--index:5;">t</span>
     </div>
-    <div class="spinner" style="--spinner-color:white"></div>
 </div>
 <?php endif ?>

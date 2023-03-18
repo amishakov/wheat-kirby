@@ -16,14 +16,15 @@
 } 
 
 #loading .title span {
+    transform: translateY(0.5rem);
+    opacity: 0;
     animation: loading 2s calc(var(--index)*0.1s) infinite;
 }
 
-
-/* [data-loaded="true"] #loading {
+[data-loaded="true"] #loading {
     opacity: 0;
     visibility: hidden;
-} */
+}
 
 @keyframes loading {
     0% {
