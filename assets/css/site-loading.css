@@ -9,16 +9,18 @@
     flex-direction: column;
     transition: all 0.4s;
     gap: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #loading .title {
     display: flex;
-} 
+}
 
 #loading .title span {
     transform: translateY(0.5rem);
     opacity: 0;
-    animation: loading 2s calc(var(--index)*0.1s) infinite;
+    animation: loading 1s calc(var(--index)*0.1s) infinite;
 }
 
 [data-loaded="true"] #loading {
@@ -28,7 +30,7 @@
 
 @keyframes loading {
     0% {
-        transform: translateY(0.5rem);
+        transform: translateY(0.25rem);
         opacity: 0;
     }
     30% {
@@ -40,7 +42,7 @@
         opacity: 1;
     }
     100% {
-        transform: translateY(-0.5rem);
+        transform: translateY(-0.25rem);
         opacity: 0;
     }
 }

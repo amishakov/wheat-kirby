@@ -5,16 +5,18 @@
             $boosted = true;
         }
     }
+
+    $chars = str_split($site->title());
+    $i = 0;
 ?>
 
 <?php if (!$boosted): ?> 
 <div id="loading">
     <div class="title">
-        <span style="--index:1;">W</span>
-        <span style="--index:2;">h</span>
-        <span style="--index:3;">e</span>
-        <span style="--index:4;">a</span>
-        <span style="--index:5;">t</span>
+        <?php foreach ($chars as $c): ?>
+            <?php $i = $i + 1 ?>
+            <span style="--index:<?= $i ?>;"><?= $c ?></span>
+        <?php endforeach ?>
     </div>
 </div>
 <?php endif ?>
