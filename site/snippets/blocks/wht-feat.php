@@ -1,8 +1,8 @@
 <wht-feat class="block">
     <div class="ctn">
         <div class="media <?= $block->position()->or('left') ?>">
-            <?php if($picture = $block->picture()->toFile()): ?>
-            <?= snippet('img', ['image'=>$picture]) ?>
+            <?php if($p = $block->picture()->toFile()): ?>
+            <img loading="lazy" src="<?= $p->resize(300)->url() ?>" srcset="<?= $p->srcset('webp') ?>" alt="<?= $p->alt() ?>">
             <?php endif ?>
         </div>
         <div class="prose">

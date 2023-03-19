@@ -2,16 +2,10 @@ img[loading="lazy"] {
 	opacity: 0;
 }
 
-img[src*=".jpg"], 
-img[src*=".jpeg"],
-img[src*=".webp"] {
-	background: #f1f1f1;
-}
-
 img[loading="lazy"][loaded] {
 	animation-name: lazyImg;
-	animation-duration: 200ms;
-	animation-delay: 0ms;
+	animation-duration: 0.2s;
+	animation-delay: 0s;
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
 }
