@@ -1,5 +1,11 @@
-img[loading="lazy"]:not([loaded]) {
+img[loading="lazy"] {
 	opacity: 0;
+}
+
+img[src*=".jpg"], 
+img[src*=".jpeg"],
+img[src*=".webp"] {
+	background: #f1f1f1;
 }
 
 img[loading="lazy"][loaded] {

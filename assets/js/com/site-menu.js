@@ -26,7 +26,7 @@ class SiteMenu extends HTMLElement {
 
 	set state(state) {
 		this.dataset.state = state;
-		if (state == true) {
+		if (state === true) {
 			scrollOff();
 		} else {
 			scrollOn();

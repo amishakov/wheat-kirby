@@ -6,7 +6,7 @@
 	});
 	window.addEventListener("load", () => {
 		setTimeout(() => {
-			document.body.classList.add("_l");
+			document.body.dataset.loaded = true;
 		}, 2000);
 	});
 })();

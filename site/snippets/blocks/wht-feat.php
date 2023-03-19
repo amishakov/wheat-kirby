@@ -1,9 +1,9 @@
 <wht-feat class="block">
     <div class="ctn">
         <div class="media <?= $block->position()->or('left') ?>">
-        <?php if($picture = $block->picture()->toFile()): ?>
-        <?= snippet('img', ['image'=>$picture]) ?>
-        <?php endif ?>
+            <?php if($picture = $block->picture()->toFile()): ?>
+            <?= snippet('img', ['image'=>$picture]) ?>
+            <?php endif ?>
         </div>
         <div class="prose">
             <?= $block->text()->kirbytext() ?>
