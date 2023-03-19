@@ -18,6 +18,11 @@ wht-feat .ctn {
     }
 }
 
+wht-feat .media img {
+    width: 100%;
+    height: auto;
+}
+
 wht-feat .prose {
     display: flex;
     flex-direction: column;
