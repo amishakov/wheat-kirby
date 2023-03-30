@@ -17,8 +17,8 @@
 @import "default.css";
 
 /* BLOCKS */
-@import "block.css";
-@import "wht-hr.css";
+@import "blocks.css";
+@import "divider.css";
 @import "wht-txt.css";
 @import "wht-feat.css";
 @import "wht-feats.css";

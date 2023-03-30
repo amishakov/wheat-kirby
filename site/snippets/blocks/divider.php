@@ -1,5 +1,5 @@
-<wht-hr class="block">
+<section class="_divider">
     <div class="ctn">
         <hr>
     </div>
-</wht-hr>
+</section>
