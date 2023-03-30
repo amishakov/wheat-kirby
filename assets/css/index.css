@@ -17,15 +17,15 @@
 @import "default.css";
 
 /* BLOCKS */
-@import "blocks.css";
-@import "divider.css";
-@import "wht-txt.css";
-@import "wht-feat.css";
-@import "wht-feats.css";
-@import "wht-h.css";
-@import "wht-img.css";
-@import "wht-vid.css";
-@import "wht-refs.css";
+@import "_blocks.css";
+@import "_divider.css";
+@import "_text.css";
+@import "_feature.css";
+@import "_features.css";
+@import "_heading.css";
+@import "_image.css";
+@import "_video.css";
+@import "_references.css";
 
 /* MISC */
 @import "fx.css";

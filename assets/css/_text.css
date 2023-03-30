@@ -1,26 +1,26 @@
-/* wht-txt {} */
+/* ._text {} */
 
-wht-txt .ctn {
+._text .ctn {
     display: grid;
     gap: var(--spacing-200);
 
 }
 
 @media (min-width: 1024px) {
-    wht-txt .ctn {
+    ._text .ctn {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-/* wht-txt .prose {} */
+/* ._text .prose {} */
 
-wht-txt p,
-wht-txt ul,
-wht-txt ol {
+._text p,
+._text ul,
+._text ol {
     color: var(--c-fgl);
 }
 
-wht-txt .links {
+._text .links {
     gap: 1rem;
     display: flex;
     align-items: center;

@@ -1,4 +1,4 @@
-<wht-h class="block">
+<section class="_heading">
     <div class="ctn">
         <<?= $level = $block->level()->or('h2') ?> class="<?= $level ?>">
         <?= $block->title() ?>
@@ -11,4 +11,4 @@
         </div>
         <?php endif ?>
     </div>
-</wht-h>
+</section>

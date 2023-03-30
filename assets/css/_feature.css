@@ -1,40 +1,40 @@
-/* wht-feat {} */
+/* ._feature {} */
 
-wht-feat .ctn {
+._feature .ctn {
     display: grid;
     gap: var(--spacing-200);
 
 }
 
 @media (min-width: 1024px) {
-    wht-feat .ctn {
+    ._feature .ctn {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 1024px) {
-    wht-feat .media.right {
+    ._feature .media.right {
         order: 1;
     }
 }
 
-wht-feat .media img {
+._feature .media img {
     width: 100%;
     height: auto;
 }
 
-wht-feat .prose {
+._feature .prose {
     display: flex;
     flex-direction: column;
 }
 
-wht-feat p,
-wht-feat ul,
-wht-feat ol {
+._feature p,
+._feature ul,
+._feature ol {
     color: var(--c-fgl);
 }
 
-wht-feat .links {
+._feature .links {
     gap: 1rem;
     display: flex;
     align-items: center;

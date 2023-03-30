@@ -9,14 +9,14 @@ tabs:
           blocks:
             type: blocks
             fieldsets:
-              - wht-txt
-              - wht-refs
-              - wht-feat
-              - wht-feats
-              - wht-hr
-              - wht-img
-              - wht-vid
-              - wht-h
+              - text
+              - references
+              - feature
+              - features
+              - divider
+              - image
+              - video
+              - heading
   seo:
     sections:
       seo:

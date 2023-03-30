@@ -1,48 +1,48 @@
-/* wht-refs {} */
+/* ._references {} */
 
-wht-refs .ctn {
+._references .ctn {
     display: grid;
     gap: var(--spacing-200);
 
 }
 
 @media (min-width: 1024px) {
-    wht-refs .ctn {
+    ._references .ctn {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-wht-refs .prose {
+._references .prose {
     max-width: 52ch;
 }
 
-wht-refs .content p,
-wht-refs .content ul,
-wht-refs .content ol {
+._references .content p,
+._references .content ul,
+._references .content ol {
     color: var(--c-fgl);
 }
 
-wht-refs .refs li:not(:first-child) {
+._references .refs li:not(:first-child) {
     border-top: 1px solid var(--c-line);
     padding-top: var(--spacing-200);
 }
 
-wht-refs .refs li {
+._references .refs li {
     padding-bottom: var(--spacing-200);
 }
 
-wht-refs .refs li > a {
+._references .refs li > a {
     font-size: var(--text-100);
     font-family: var(--font-serif);
 }
 
-wht-refs .refs li sub {
+._references .refs li sub {
     display: block;
     color: var(--c-fgl);
     font-size: var(--text--100);
     margin-top: var(--spacing-050);
 }
 
-wht-refs .refs li a {
+._references .refs li a {
     text-decoration: underline;
 }

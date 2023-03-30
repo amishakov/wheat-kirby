@@ -1,17 +1,17 @@
-/* wht-h {} */
+/* ._heading {} */
 
-wht-h .ctn {
+._heading .ctn {
     text-align: center;
 }
 
-wht-h h1,
-wht-h h2,
-wht-h h3 {
+._heading h1,
+._heading h2,
+._heading h3 {
     max-width: 32ch;
     margin: 0 auto;
 }
 
-wht-h .links {
+._heading .links {
     align-items: center;
     display: flex;
     gap: 1rem;

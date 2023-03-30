@@ -1,7 +1,9 @@
-<wht-txt class="block">
+<section class="_feature">
     <div class="ctn">
-        <div class="prose">
-            <<?= $level = $block->level()->or('h2') ?>><?= $block->title() ?></<?= $level ?>>
+        <div class="media <?= $block->position()->or('left') ?>">
+            <?php if($p = $block->picture()->toFile()): ?>
+            <img loading="lazy" src="<?= $p->resize(300)->url() ?>" srcset="<?= $p->srcset('webp') ?>" alt="<?= $p->alt() ?>">
+            <?php endif ?>
         </div>
         <div class="prose">
             <?= $block->text()->kirbytext() ?>
@@ -14,4 +16,4 @@
             <?php endif ?>
         </div>
     </div>
-</wht-txt>
+</section>
