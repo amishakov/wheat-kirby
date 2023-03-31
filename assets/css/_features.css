@@ -2,7 +2,7 @@
 
 ._features .ctn {
     display: grid;
-    gap: var(--spacing-200);
+    gap: var(--gap);
 
 }
 
@@ -12,17 +12,12 @@
     }
 }
 
-._features h3 {
-    font-family: var(--font-serif);
-}
-
 ._features p {
-    color: var(--c-fgl);
-    font-size: var(--text--100);
-    margin-top: 1rem;
+    margin-top: var(--gutter);
 }
 
 ._features figure {
+    margin-bottom: calc(1.5 * var(--gutter));
     overflow: hidden;
 }
 

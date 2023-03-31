@@ -1,8 +1,8 @@
 <section class="_feature">
     <div class="ctn">
         <div class="media <?= $block->position()->or('left') ?>">
-            <?php if($p = $block->picture()->toFile()): ?>
-            <img loading="lazy" src="<?= $p->resize(300)->url() ?>" srcset="<?= $p->srcset('webp') ?>" alt="<?= $p->alt() ?>">
+            <?php if($pic = $block->picture()->toFile()): ?>
+            <?= snippet('img', ['image'=>$pic]) ?>
             <?php endif ?>
         </div>
         <div class="prose">
