@@ -9,14 +9,14 @@ tabs:
           blocks:
             type: blocks
             fieldsets:
-              - text
-              - references
-              - feature
-              - features
-              - divider
-              - image
-              - video
-              - heading
+              - _text
+              - _references
+              - _feature
+              - _features
+              - _divider
+              - _image
+              - _video
+              - _heading
   seo:
     sections:
       seo:
