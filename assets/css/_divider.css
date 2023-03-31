@@ -5,7 +5,7 @@
     height: 1px;
     overflow: hidden;
     position: relative;
-    color: var(--c-line);
+    color: var(--c-gray);
 }
 
 ._divider hr::after {
