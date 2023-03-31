@@ -2,7 +2,7 @@
 
 ._feature .ctn {
     display: grid;
-    gap: var(--spacing-200);
+    gap: var(--gap);
 
 }
 
@@ -28,14 +28,8 @@
     flex-direction: column;
 }
 
-._feature p,
-._feature ul,
-._feature ol {
-    color: var(--c-fgl);
-}
-
 ._feature .links {
-    gap: 1rem;
+    gap: var(--gap);
     display: flex;
     align-items: center;
 }

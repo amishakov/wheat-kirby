@@ -7,8 +7,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+    display: none;
 }
 
 [data-loaded="true"] #loading {

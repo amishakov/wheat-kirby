@@ -4,7 +4,7 @@
         <?= $block->title() ?>
         </<?= $level ?>>
         <?php if ($block->links()->inNoteEmpty()): ?>
-        <div class="mt-200 links">
+        <div class="links">
             <?php foreach ($block->links()->toStructure() as $l): ?>
             <a class="<?= $s = $l->style()->or('btn') ?>" href="<?= $l->url() ?>"><?= $l->label() ?></a>
             <?php endforeach ?>

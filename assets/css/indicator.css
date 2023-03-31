@@ -4,7 +4,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: white;
+	background: var(--c-white);
 	visibility: hidden;
 	opacity: 0;
 	transition-property: opacity, visibility;
@@ -17,7 +17,8 @@
 }
 
 [class*="htmx"] .indicator {
-	opacity: 1;
+	transition-delay: 0.4s;
+	opacity: 0.9;
 	visibility: visible;
 }
 

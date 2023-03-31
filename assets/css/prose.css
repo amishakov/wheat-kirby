@@ -1,26 +1,29 @@
 .prose {
-	font-size: var(--text-0);
+	font-size: var(--fs-m);
 	line-height: 1.5;
 }
 
 .prose * + p {
-	margin-top: 2rem;
+	margin-top: var(--gap);
 }
 
 .prose h1, .h1 {
-	font-family: var(--font-serif);
-	font-size: var(--text-500);
+	font-family: var(--ff-serif);
+	font-size: var(--fs-2xl);
 	line-height: 1.25em;
 }
 
 .prose h2, .h2 {
-	font-family: var(--font-serif);
-	font-size: var(--text-400);
+	font-family: var(--ff-serif);
+	font-size: var(--fs-xl);
 	line-height: 1.2;
 }
 
-.prose h3, .h3 {
-	font-size: var(--text-200);
+.prose h3, .h3,
+.prose h3, .h4,
+.prose h3, .h5,
+.prose h3, .h6 {
+	font-size: var(--fs-l);
 	line-height: 1.2;
 }
 
