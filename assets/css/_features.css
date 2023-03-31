@@ -1,48 +1,48 @@
-/* wht-feats {} */
+/* ._features {} */
 
-wht-feats .ctn {
+._features .ctn {
     display: grid;
     gap: var(--spacing-200);
 
 }
 
 @media (min-width: 1024px) {
-    wht-feats .ctn {
+    ._features .ctn {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-wht-feats h3 {
+._features h3 {
     font-family: var(--font-serif);
 }
 
-wht-feats p {
+._features p {
     color: var(--c-fgl);
     font-size: var(--text--100);
     margin-top: 1rem;
 }
 
-wht-feats figure {
+._features figure {
     overflow: hidden;
 }
 
-wht-feats figure.picture {
+._features figure.picture {
     aspect-ratio: 3/4;
     width: 100%;
 }
 
-wht-feats figure.picture img {
+._features figure.picture img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-wht-feats figure.icon {
+._features figure.icon {
     aspect-ratio: 1/1;
     width: 4rem;
 }
 
-wht-feats figure.icon img {
+._features figure.icon img {
     object-fit: contain;
     width: 100%;
     height: 100%;

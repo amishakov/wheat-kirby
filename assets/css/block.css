@@ -1,6 +1,0 @@
-.block {
-    display: block;
-    position: relative;
-    margin-top: var(--spacing-600);
-    scroll-margin-top: var(--spacing-600);
-}

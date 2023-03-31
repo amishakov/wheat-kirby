@@ -1,6 +1,6 @@
-/* wht-hr {} */
+/* ._divider {} */
 
-wht-hr hr {
+._divider hr {
     border: none;
     height: 1px;
     overflow: hidden;
@@ -8,7 +8,7 @@ wht-hr hr {
     color: var(--c-line);
 }
 
-wht-hr hr::after {
+._divider hr::after {
     background: currentColor;
     content: "";
     inset: 0;

@@ -1,7 +1,7 @@
-<wht-img class="block">
+<section class="_image">
     <div class="ctn">
         <?php if ($picture = $block->picture()->toFile()): ?>
         <?= snippet('img', ['image'=>$picture]) ?>
         <?php endif ?>
     </div>
-</wht-img>
+</section>

@@ -57,6 +57,24 @@ Once setup, Ploi will deploy your site every time you complete a pull request to
 
 [todo]
 
+## Backups
+
+Setting up automatic backup is done within Ploi and takes aboit 30 seconds. We use DigitalOcean Spaces so you'll need [these instructions]() to set it up the first time, but once it's done you simply have to...
+
+- Go to **Backups**
+- Click the **File** tab
+- Click **Create**
+- Select the server, site and proper config.
+- Select your site
+- Set Path to `/mydomain_com` (using your own domain)
+- Interval and amount can be set at whatever you deem acceptable.
+- If you are hosting a Kirby site, add `site/cache/*, site/sessions/*, media/*` in the Exclude field
+- Hit Save
+
+## Restoring a backup
+
+[todo]
+
 ## Fathom Analytics (Trough Zaraz)
 
 [todo]

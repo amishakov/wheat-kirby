@@ -1,4 +1,4 @@
-<wht-refs class="block">
+<section class="_references">
     <div class="ctn">
         <div class="content">
             <div class="prose">
@@ -21,4 +21,4 @@
             <?php endforeach ?>
         </ul>
     </div>
-</wht-refs>
+</section>

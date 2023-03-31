@@ -1,4 +1,4 @@
-<wht-vid class="block">
+<section class="_video">
     <div class="ctn">
         <?php if ($v = $block->video()->toFile()): ?>
         <video 
@@ -14,4 +14,4 @@
         </video>            
         <?php endif ?>
     </div>
-</wht-vid>
+</section>
