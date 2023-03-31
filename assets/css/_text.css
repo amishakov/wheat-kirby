@@ -2,7 +2,7 @@
 
 ._text .ctn {
     display: grid;
-    gap: var(--spacing-200);
+    gap: var(--gap);
 
 }
 
@@ -12,16 +12,8 @@
     }
 }
 
-/* ._text .prose {} */
-
-._text p,
-._text ul,
-._text ol {
-    color: var(--c-fgl);
-}
-
 ._text .links {
-    gap: 1rem;
+    gap: var(--gap);
     display: flex;
     align-items: center;
 }

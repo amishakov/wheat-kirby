@@ -104,5 +104,6 @@
 
 ::selection {
     color: var(--c-fg);
-    background-color: gold;
+    background-color: #1d1dff;
+	color: white;
 }

@@ -13,19 +13,6 @@ tabs:
               label: 
                 type: text
               url: 
-                type: text
-          footerLinks:
-            type: structure
-            fields:
-              name: 
-                type: text
-              links:
-                type: structure
-                fields:
-                  label: 
-                    type: text
-                  url: 
-                    type: text
           legal:
             type: text
   seo:

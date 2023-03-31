@@ -7,6 +7,6 @@
 	window.addEventListener("load", () => {
 		setTimeout(() => {
 			document.body.dataset.loaded = true;
-		}, 500);
+		}, 0);
 	});
 })();
