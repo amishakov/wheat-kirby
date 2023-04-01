@@ -1,6 +1,6 @@
 <header id="header">
     <nav>
-        <a class="logo" href="<?= $site->url() ?>"><?= $site->title() ?></a>
+        <a class="logo" href="<?= $site->url() ?>"><?= asset('assets/svg/wheat.svg')->read() ?></a>
         <?php foreach ($site->headerLinks()->toStructure() as $l): ?>
         <a class="link" href="<?= $l->url() ?>"><?= $l->label() ?></a>
         <?php endforeach ?>
