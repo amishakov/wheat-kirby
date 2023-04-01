@@ -2,7 +2,7 @@
 
 ._references .ctn {
     display: grid;
-    gap: var(--spacing-200);
+    gap: var(--gap);
 
 }
 
@@ -16,31 +16,24 @@
     max-width: 52ch;
 }
 
-._references .content p,
-._references .content ul,
-._references .content ol {
-    color: var(--c-fgl);
-}
-
 ._references .refs li:not(:first-child) {
-    border-top: 1px solid var(--c-line);
-    padding-top: var(--spacing-200);
+    border-top: 1px solid var(--c-lightgray);
+    padding-top: var(--gutter);
 }
 
 ._references .refs li {
-    padding-bottom: var(--spacing-200);
+    padding-bottom: var(--gutter);
 }
 
 ._references .refs li > a {
-    font-size: var(--text-100);
-    font-family: var(--font-serif);
+    font-size: var(--fs-l);
 }
 
 ._references .refs li sub {
     display: block;
-    color: var(--c-fgl);
-    font-size: var(--text--100);
-    margin-top: var(--spacing-050);
+    font-size: var(--fs-s);
+    color: var(--c-darkgray);
+    margin-top: 0.5rem;
 }
 
 ._references .refs li a {
