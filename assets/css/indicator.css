@@ -33,7 +33,6 @@
 .htmx-request .indicator .spinner,
 .htmx-swapping .indicator .spinner {
 	transition-duration: 0.2s;
-	transition-delay: 1s;
 	visibility: visible;
 	opacity: 1;
 }
