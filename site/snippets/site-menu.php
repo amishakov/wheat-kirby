@@ -1,7 +1,7 @@
-<site-menu>
+<site-menu role="menu">
     <nav>
-        <?php foreach ($site->menu_links()->toStructure() as $link): ?>
-        <a href="<?= $link->url() ?>" is="nav-link" role="menuitem"><?= $link->label() ?></a>
+        <?php foreach ($site->nav()->toStructure() as $a): ?>
+        <a href="<?= $a->url() ?>" role="menuitem"><?= $a->label() ?></a>
         <?php endforeach ?>
         <?= snippet('ls') ?>
     </nav>
