@@ -34,7 +34,27 @@ We try to keep Wheat (and everything we do) as light and simple as possible. The
 
 We use `npm` to bundle some javascript and css but that's pretty much it. Everything is mostly done by hand as long as it's manageable.
 
-## Installation
+## Installing PHP
+
+One of the easiest way to run PHP on Apple Silicon is to use XAMPP. So go get is and install it.
+Once it's ready, open your Terminal and...
+
+- Check what PHP version you are runing using `which php`.
+
+Now, we just need to swap this over to the PHP that is installed with XAMPP, which is usually located at /Applications/XAMPP/bin
+
+- `vim ~/.bash_profile`
+
+Type `i` and then paste the following at the top of the file:
+
+`export PATH=/Applications/XAMPP/bin:$PATH`
+Hit ESC, Type :wq, and hit Enter
+
+In Terminal, run `~/.bash_profile`
+
+Run `which php` again and look for the updated version. If everything was successful, It should output the new path to XAMPP PHP install.
+
+## Installing Kirby
 
 [wip]
 
