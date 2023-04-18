@@ -1,6 +1,6 @@
 # Wheat
 
-## What is it ?
+## What is it?
 
 Wheat is the starter-kit used to bootstrap most of Calotte's  projects. It's filled with common patterns and basic stuff you see all around the Web. It is an ever evolving project where we upstream everything we think could be abstracted and reused for futur projects. While we do our best to keep the site usable as-is, it is not meant as a "theme" you can just use out of the box.
 
