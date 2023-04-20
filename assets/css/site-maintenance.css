@@ -1,0 +1,24 @@
+.maintenance {
+    padding-bottom: var(--gutter);
+    text-align: center;
+    margin-top: var(--rhythm);
+}
+
+.maintenance {
+    text-align: center; 
+    padding: 150px; 
+}
+
+.maintenance h1 { 
+    font-size: 4rem; 
+}
+.maintenance article { 
+    display: block;
+    text-align: left;
+    width: 80vw;
+    margin: 0 auto; 
+}
+
+.maintenance p:first-child { 
+    max-width: 78ch;
+}
