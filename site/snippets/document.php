@@ -55,7 +55,6 @@
         <?= snippet('user-scripts') ?>
     </head>
     <body class="top" hx-boost="true" hx-indicator="body" hx-swap="innerHTML swap:0s settle:0s">
-        
         <?php if (!$site->maintenance()->toBool() and Cookie::exists('kirby_session')): ?>
         <div id="page" class="<?= $page->template() ?>">
             <?= snippet('site-header') ?>
@@ -66,9 +65,6 @@
             <?= snippet('site-loading') ?>
         </div>
         <?php else:?>
-            <?php
-                snippet('assets')
-            ?>
             <?= snippet('site-maintenance') ?>
         <?php endif ?>
     </body>

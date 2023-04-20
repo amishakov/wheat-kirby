@@ -40,6 +40,10 @@ tabs:
             help: Ommit style tag
           maintenance:
             type: toggle
+          maintenanceTitle:
+            type: text
+          maintenanceText:
+            type: textarea
       files:
         type: files
     
