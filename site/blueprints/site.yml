@@ -38,6 +38,8 @@ tabs:
             buttons: false
             font: monospace
             help: Ommit style tag
+          maintenance:
+            type: toggle
       files:
         type: files
     

@@ -55,15 +55,19 @@
         <?= snippet('user-scripts') ?>
     </head>
     <body class="top" hx-boost="true" hx-indicator="body" hx-swap="innerHTML swap:0s settle:0s">
+        
+        <?php if (!$site->maintenance()->toBool() and Cookie::exists('kirby_session')): ?>
+
         <div id="page" class="<?= $page->template() ?>">
             <?= snippet('site-header') ?>
-
             <?= $slot ?>
-
             <?= snippet('site-footer') ?> 
             <?= snippet('site-menu') ?>
             <?= snippet('indicator') ?>
             <?= snippet('site-loading') ?>
         </div>
+
+        <?php endif ?>
+
     </body>
 </html>
