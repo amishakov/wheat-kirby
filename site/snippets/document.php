@@ -55,7 +55,13 @@
         <?= snippet('user-scripts') ?>
     </head>
     <body class="top" hx-boost="true" hx-indicator="body" hx-swap="innerHTML swap:0s settle:0s">
-        <?php if (!$site->maintenance()->toBool() and Cookie::exists('kirby_session')): ?>
+        <?php
+        $user = $kirby->user();
+        ?>
+        <!-- si le cookie est present et que le site est qe le site est en mode maintenance -->
+        <?php if (!$site->maintenance()->toBool() and Cookie::exists('kirby_session') or
+        $user?->isLoggedIn()): ?>
+            <!-- si le cookie est present et que le site est que l'usager est connécté-->
         <div id="page" class="<?= $page->template() ?>">
             <?= snippet('site-header') ?>
             <?= $slot ?>
