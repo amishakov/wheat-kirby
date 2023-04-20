@@ -1,5 +1,6 @@
 <?php
     date_default_timezone_set('America/Toronto');
+    $user = $kirby->user();
     $salt = rand();
     $page_title = $page->seoTitle()->isNotEmpty() ? $page->seoTitle() : null;
     $page_desc = $page->seoDescription()->isNotEmpty() ? $page->seoDescription() : null; 
@@ -38,9 +39,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?= $title ?></title>
         <meta name="description" content="<?= $desc ?>">
-
         <?= snippet('assets') ?>
-        
         <link rel="apple-touch-icon" sizes="180x180" href="<?= url('assets/images/apple-touch-icon.png') ?>">
         <link rel="icon" type="image/png" sizes="32x32" href="<?= url('assets/images/favicon-32x32.png') ?>">
         <link rel="icon" type="image/png" sizes="16x16" href="<?= url('assets/images/favicon-16x16.png') ?>">
@@ -54,15 +53,21 @@
         <meta name="twitter:description" content="<?= $desc ?>">
         <meta name="twitter:image" content="<?= $img ?>">
         <meta name="htmx-config" content='{"includeIndicatorStyles": false}'>
-        <?php if ($scripts = $site->scripts()): ?>
-        <?= $scripts ?>
-        <?php endif ?>
-        <?php if ($styles = $site->styles()): ?>
-        <style>
-            <?= $styles ?>
-        </style>
-        <?php endif ?>
+        <?= snippet('user-scripts') ?>
     </head>
     <body class="top" hx-boost="true" hx-indicator="body" hx-swap="innerHTML swap:0s settle:0s">
+        <?php if (!$site->maintenance()->toBool() or
+        $user?->isLoggedIn()): ?>
         <div id="page" class="<?= $page->template() ?>">
             <?= snippet('site-header') ?>
+            <?= $slot ?>
+            <?= snippet('site-footer') ?> 
+            <?= snippet('site-menu') ?>
+            <?= snippet('indicator') ?>
+            <?= snippet('site-loading') ?>
+        </div>
+        <?php else:?>
+            <?= snippet('site-maintenance') ?>
+        <?php endif ?>
+    </body>
+</html>
