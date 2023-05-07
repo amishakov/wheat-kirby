@@ -2,17 +2,17 @@
 
 ## What is it?
 
-Wheat is the starter-kit used to bootstrap most of Calotte's  projects. It's filled with common patterns and basic stuff you see all around the Web. It is an ever evolving project where we upstream everything we think could be abstracted and reused for futur projects. While we do our best to keep the site usable as-is, it is not meant as a "theme" you can just use out of the box.
+Wheat is the starter-kit used to bootstrap most of Calotte's projects. It's filled with common patterns and basic stuff you see all around the Web. It is an ever evolving project where we upstream everything we think could be abstracted and reused for futur projects. While we do our best to keep the site usable as-is, it is not meant as a "theme" you can just use out of the box.
 
 ## What you'll need
 
-Nothing fancy here. So once you have your favorite code editor in hands and a local environment running PHP 8.1, you are pretty much good to go. But here is our list of things and services we use from development to production.
+Nothing fancy here. So once you have your favorite code editor in hands and a local environment running PHP 8.2, you are pretty much good to go. But here is our list of things and services we use from development to production.
 
 - VScode
 - Github
-- XAMPP of any PHP environment you like
+- XAMPP (or any PHP environment)
 - Node / npm
-- DigitalOcean for hosting
+- DigitalOcean (hosting)
 - Ploi.io for server, site and devOps.
 
 ## What's in it?
@@ -23,20 +23,20 @@ We try to keep Wheat (and everything we do) as light and simple as possible. The
 - HTMX
 - Some javascript we use all the time for stuff like:
   - HTMX 404 and cache utilities
-  - Scroll managment
-  - Link attributes
+  - Basic scroll managment
+  - Link management
   - Image loading
   - Intersecting
   - Loading
   - Menus
 - WebComponents for everything we can.
-- Some CSS
+- A bunch of CSS
 
 We use `npm` to bundle some javascript and css but that's pretty much it. Everything is mostly done by hand as long as it's manageable.
 
 ## Installing PHP
 
-One of the easiest way to run PHP on Apple Silicon is to use XAMPP. So go get is and install it.
+One of the easiest way to run PHP on Apple Silicon is to use XAMPP. So go get it (and install it).
 Once it's ready, open your Terminal and...
 
 - Check what PHP version you are runing using `which php`.
@@ -54,13 +54,15 @@ In Terminal, run `~/.bash_profile`
 
 Run `which php` again and look for the updated version. If everything was successful, It should output the new path to XAMPP PHP install.
 
-## Installing Kirby
+## Getting a new project up an running
 
-[wip]
-
-New repo from this one, change names, blip bloup blip, you're done.
-The `content` folder is commited by default. You'll usually want to ignore it at some point in development. When you are ready, just uncomment the `/content` line in your `.gitignore` file.
-Make sure you create always work in the `develop` branch. The `main` (or `master`) will serve as our production branch.
+1. Go to Github and create a new repo using `calotteca/wheat-kirby` as template.
+2. Clone your new repo on your local machine.
+3. Create a new branch called `develop`. This is where you'll do most of your work.
+4. Run `composer start` to start your local server.
+5. Go to `http://localhost:8000/panel` and create your account.
+6. Add a page, and make sure you you use `home` as the slug.
+7. If your website works at that point, you are done. Good job and have fun. I not, I'm sorry.
 
 ## Initial deployment & Ploi
 
