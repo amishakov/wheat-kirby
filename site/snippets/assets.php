@@ -1,6 +1,6 @@
 <?php 
     $salt = rand();
-    if (Url::query() === 'dev=') {
+    if (Url::query() === 'dev=' && $kirby->option('debug')) {
         Cookie::set('dev', '');
     };
     if (Url::query() === 'nodev=') {
