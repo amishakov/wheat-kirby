@@ -24,11 +24,11 @@
 })();
 
 function scrollOn() {
-	document.body.style.overflowY = 'auto';
+	document.body.style.overflow = 'auto';
 }
 
 function scrollOff() {
-	document.body.style.overflowY = 'hidden';
+	document.body.style.overflow = 'hidden';
 }
 
 function scrollToTop() {
