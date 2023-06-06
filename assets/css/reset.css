@@ -1,22 +1,18 @@
 *,
 *::before,
 *::after {
+	-webkit-text-size-adjust: none;
 	box-sizing: border-box;
-}
-
-* {
 	margin: 0;
 	padding: 0;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	line-height: 1.5;
 }
 
 html,
 body {
 	height: 100%;
-}
-
-body {
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
 }
 
 img,
@@ -26,6 +22,7 @@ canvas,
 svg {
 	display: block;
 	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 
@@ -64,6 +61,11 @@ ol {
 	list-style: none;
 }
 
-/* #page {
-	isolation: isolate;
-} */
+details,
+details summary {
+	list-style: none;
+}
+
+details summary::-webkit-details-marker {
+	display: none;
+}

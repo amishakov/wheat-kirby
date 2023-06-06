@@ -1,12 +1,13 @@
 (function () {
 	"use strict";
-	const sel = ".block";
+	const sel = "[in]";
+	const once = true;
 	const Observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
-				entry.target.classList.add("_i");
-			} else {
-				entry.target.classList.remove("_i");
+				entry.target.setAttribute("in", "1");
+			} else if (!once) {
+				entry.target.setAttribute('in', "0");
 			}
 		});
 	});	

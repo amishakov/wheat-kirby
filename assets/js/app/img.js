@@ -15,6 +15,7 @@
 		o.observe(document.body, { childList: true, subtree: true });
 	};
 
+	// Safari object-fit fix
 	const ResetSRC = function () {
 		document.addEventListener("htmx:load", (event) => {
 			document.querySelectorAll("img").forEach((el) => {
