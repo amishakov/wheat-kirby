@@ -1,8 +1,8 @@
 <section class="_feature">
     <div class="ctn">
         <div class="media <?= $block->position()->or('left') ?>">
-            <?php if($pic = $block->picture()->toFile()): ?>
-            <?= snippet('img', ['image'=>$pic]) ?>
+            <?php if($picture = $block->picture()->toFile()): ?>
+            <?= snippet('img', ['image'=>$picture]) ?>
             <?php endif ?>
         </div>
         <div class="prose">
