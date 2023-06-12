@@ -17,6 +17,8 @@ tabs:
               - _image
               - _video
               - _heading
+              - _carousel
+
   seo:
     sections:
       seo:
