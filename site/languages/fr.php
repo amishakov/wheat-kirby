@@ -12,6 +12,7 @@ return [
         'menu' => 'menu',
         'open' => 'ouvrir',
         'close' => 'fermer',
+        'search' => 'recherche'
     ],
     'url' => NULL
 ];

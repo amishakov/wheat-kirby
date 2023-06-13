@@ -61,6 +61,22 @@ return [
                 $content = snippet('sitemap', compact('pages', 'ignore'), true);
                 return new Kirby\Cms\Response($content, 'application/xml');
             }            
+        ],
+        [
+            'pattern' => 'sitemap',
+            'language' => '*',
+            'action'  => function() {
+                return go('sitemap.xml', 301);
+            }
+        ],
+        [
+            'pattern' => 'search',
+            'language' => '*',
+            'action'  => function() {
+                $site = site();
+                $content = snippet('search-results', compact('site'), true);
+                return new Kirby\Cms\Response($content, 'text/html');
+            }
         ]
     ],
 ];
