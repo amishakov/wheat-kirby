@@ -7,7 +7,9 @@
 	--c-black: rgb(5, 5, 5);
 	--c-lightgray: rgba(0, 0, 0, 0.2);
 	--c-darkgray: rgba(0, 0, 0, 0.7);
-	--c-blue: #1d1dff;
+	--c-blue: #5593f0;
+    --c-green: #5acb8e;
+    --c-red: #ff6c4b;
 }
 
 /* SPACINGS */
@@ -22,9 +24,9 @@
 /* TEXT */
 
 :root {
-	--font-serif: 'IBM Plex Serif', 'Times New Roman', Times, serif;
-	--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-family: var(--font-sans);
+	--ff-serif: 'IBM Plex Serif', serif;
+	--ff-sans: 'Inter', sans-serif;
+	font-family: var(--ff-sans);
 	font-size: 14px;	
 	
 	--fs-s: .8rem;
@@ -47,6 +49,6 @@
 }
 
 ::selection {
-    background-color: var(--c-blue);
-	color: var(--c-white);
+    background-color: var(--c-red);
+	color: var(--c-fg);
 }
