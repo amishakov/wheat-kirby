@@ -3,7 +3,7 @@
         <?php foreach ($site->nav()->toStructure() as $a): ?>
         <a href="<?= $a->url() ?>" role="menuitem"><?= $a->label() ?></a>
         <?php endforeach ?>
-        <?= snippet('ls') ?>
+        <?= snippet('lang') ?>
     </nav>
-    <button><?= t('close') ?></button>
+    <button class="btn close" title="<?= t('close') ?>"><?= t('close') ?></button>
 </site-menu>

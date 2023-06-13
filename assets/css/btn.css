@@ -1,10 +1,12 @@
 .btn {
-    background: black;
-    color: white;
+    background: var(--c-fg);
+    color: var(--c-bg);
     border-radius: 9999px;
-    padding: 7px 15px;
+    height: 2rem;
+    padding: 0 0.5rem;
     font-size: var(--text-sm);
     text-align: center;
+    line-height: 1;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -14,6 +16,6 @@
 
 .link {
     color: var(--c-fg);
-    font-size: var(--text-base);
+    font-size: var(--fs-m);
     text-decoration: underline;
 }

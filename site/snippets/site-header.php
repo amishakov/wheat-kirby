@@ -4,7 +4,8 @@
         <?php foreach ($site->headerLinks()->toStructure() as $l): ?>
         <a class="link" href="<?= $l->url() ?>"><?= $l->label() ?></a>
         <?php endforeach ?>
-        <?= snippet('ls') ?>
-        <button title="Menu" aria-haspopup="true" aria-controls="menu"><?= t('menu') ?></button>
+        <?= snippet('lang') ?>
+        <button class="btn search" title="<?= t('search') ?>" site-search-toggle><?= asset('assets/svg/search.svg')->read() ?></button>
+        <button class="btn menu" title="<?= t('menu') ?>"><?= t('menu') ?></button>
     </nav>
 </header>

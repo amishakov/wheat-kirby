@@ -16,15 +16,8 @@ site-menu[data-state="true"] {
 
 site-menu button {
 	position: absolute;
-	right: 1.5rem;
-	top: 1.5rem;
-	padding: 0.1rem 0.5rem;
-    text-align: center;
-    border-radius: 9999px;
-    background: #f1f1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	right: var(--gutter);
+	top: var(--gutter);
 }
 
 site-menu nav {

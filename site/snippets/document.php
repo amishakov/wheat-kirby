@@ -63,6 +63,7 @@
             <?= $slot ?>
             <?= snippet('site-footer') ?> 
             <?= snippet('site-menu') ?>
+            <site-search></site-search>
             <?= snippet('indicator') ?>
             <?= snippet('site-loading') ?>
         </div>
