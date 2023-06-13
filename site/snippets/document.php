@@ -55,7 +55,7 @@
         <meta name="htmx-config" content='{"includeIndicatorStyles": false}'>
         <?= snippet('user-scripts') ?>
     </head>
-    <body class="top" hx-boost="true" hx-indicator="body" hx-swap="innerHTML swap:0s settle:0s">
+    <body class="top" hx-boost="true" hx-indicator="body" hx-swap="innerHTML swap:0.3s settle:0.3s">
         <?php if (!$site->maintenance()->toBool() or
         $user?->isLoggedIn()): ?>
         <div id="page" class="<?= $page->template() ?>">

@@ -9,6 +9,7 @@
 ._heading h3 {
     max-width: 32ch;
     margin: 0 auto;
+    font-family: var(--ff-serif);
 }
 
 ._heading .links {

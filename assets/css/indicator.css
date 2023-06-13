@@ -1,30 +1,31 @@
 .indicator {
-	position: absolute;
+	position: fixed;
 	inset: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: var(--c-white);
-	visibility: hidden;
+	background: var(--c-bg);
 	opacity: 0;
-	transition-property: opacity, visibility;
-	transition-duration: 0.2s;
+	visibility: hidden;
 	z-index: 9999;
+	animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+	animation-duration: 0.3s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
 }
 
-#page > .indicator {
-	position: fixed;
-}
-
-[class*="htmx"] .indicator {
-	transition-delay: 0.4s;
-	opacity: 0.9;
+.htmx-request .indicator,
+.htmx-swapping .indicator {
 	visibility: visible;
+	animation-name: indicator-swapping;
+}
+
+.htmx-settling .indicator {
+	visibility: visible;
+	animation-name: indicator-settling;
 }
 
 .indicator .spinner {
-	transition-duration: 0s;
-	transition-delay: 0s;
 	transition-property: visibility, opacity;
 	visibility: hidden;
 	opacity: 0;
@@ -33,6 +34,25 @@
 .htmx-request .indicator .spinner,
 .htmx-swapping .indicator .spinner {
 	transition-duration: 0.2s;
+	transition-delay: 1s;
 	visibility: visible;
 	opacity: 1;
+}
+
+@keyframes indicator-swapping {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes indicator-settling {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
