@@ -1,7 +1,8 @@
 <section class="_features">
-    <div class="ctn">
+    <div class="ctn" in>
+        <?php $i = 0 ?>
         <?php foreach ($block->items()->toStructure() as $item): ?>
-        <article>
+        <article fx="fadein <?= $i++ ?>">
             <?php if ($pic = $item->picture()->toFile()): ?>
             <figure class="<?= $block->size()->or('icon') ?>">
             <?= snippet('img', ['image'=>$pic]) ?>

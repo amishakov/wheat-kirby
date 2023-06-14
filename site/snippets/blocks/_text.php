@@ -1,9 +1,9 @@
 <section class="_text">
-    <div class="ctn">
-        <div class="prose">
+    <div class="ctn" in>
+        <div class="prose" fx="fadein 1">
             <<?= $level = $block->level()->or('h2') ?>><?= $block->title() ?></<?= $level ?>>
         </div>
-        <div class="prose">
+        <div class="prose" fx="fadein 2">
             <?= $block->text()->kirbytext() ?>
             <?php if ($block->links()->isNotEmpty()): ?>
             <div class="links">

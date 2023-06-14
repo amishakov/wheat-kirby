@@ -1,5 +1,5 @@
-<section class="_divider">
+<section class="_divider" in>
     <div class="ctn">
-        <hr>
+        <hr fx="trace">
     </div>
 </section>
