@@ -1,3 +1,4 @@
+<div class="header_shim"></div>
 <header id="header">
     <nav>
         <a class="logo" href="<?= $site->url() ?>"><?= asset('assets/svg/wheat.svg')->read() ?></a>
