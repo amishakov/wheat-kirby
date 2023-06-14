@@ -1,9 +1,11 @@
 <site-menu role="menu">
+    <header>
+        <button class="btn close" title="<?= t('close') ?>"><?= t('close') ?></button>
+    </header>
     <nav>
-        <?php foreach ($site->nav()->toStructure() as $a): ?>
-        <a href="<?= $a->url() ?>" role="menuitem"><?= $a->label() ?></a>
+        <?php foreach ($site->menu()->toStructure() as $a): ?>
+        <a class="link" href="<?= $a->url() ?>"><?= $a->label() ?></a>
         <?php endforeach ?>
         <?= snippet('lang') ?>
     </nav>
-    <button class="btn close" title="<?= t('close') ?>"><?= t('close') ?></button>
 </site-menu>

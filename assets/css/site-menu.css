@@ -3,7 +3,6 @@ site-menu {
 	display: none;
 	inset: 0;
 	position: fixed;
-	text-align: center;
 	z-index: 7000;
 }
 
@@ -14,15 +13,23 @@ site-menu[data-state="true"] {
 	justify-content: center;
 }
 
-site-menu button {
+
+site-menu header {
 	position: absolute;
-	right: var(--gutter);
-	top: var(--gutter);
+	top: 0;
+	width: 100%;
+	max-width: var(--site);
+	margin: 0 auto;
+	padding: var(--gutter);
+	display: flex;
+	justify-content: flex-end;
 }
 
 site-menu nav {
+	width: 100%;
 	display: grid;
 	gap: 1rem;
+	text-align: center;
 }
 
 site-menu a {
