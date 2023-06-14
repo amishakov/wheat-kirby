@@ -7,12 +7,13 @@ tabs:
       content:
         type: fields
         fields:
-          nav:
+          menu:
             type: structure
             fields:
               label: 
                 type: text
-              url: 
+              url:
+                type: text
           footer:
             type: text
   seo:
