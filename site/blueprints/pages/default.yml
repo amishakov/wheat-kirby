@@ -9,15 +9,15 @@ tabs:
           blocks:
             type: blocks
             fieldsets:
-              - _text
-              - _references
+              - _carousel
+              - _divider
               - _feature
               - _features
-              - _divider
-              - _image
-              - _video
               - _heading
-              - _carousel
+              - _image
+              - _references
+              - _text
+              - _video
 
   seo:
     sections:
@@ -36,7 +36,6 @@ tabs:
     sections:
       pages:
         type: pages
-        template: default
       files:
         type: files
 

@@ -11,7 +11,7 @@
 <style><?= asset('assets/css/site-loading.css')->read() ?></style>
 
 <link rel="preload" href="/assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
-<link rel="preload" href="/assets/fonts/ibm-plex-serif-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/assets/fonts/ibm-plex-serif-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
 
 <?php if ($dev = Cookie::exists('dev')): ?>
 <link rel="stylesheet" href="/assets/css/index.css?v=<?= $salt ?>">

@@ -1,7 +1,6 @@
 /* FRAMEWORK */
 @import "reset.css";
 @import "theme.css";
-@import "ctn.css";
 @import "btn.css";
 @import "fonts.css";
 @import "img.css";
@@ -16,6 +15,7 @@
 
 /* PAGES */
 @import "default.css";
+@import "error.css";
 
 /* BLOCKS */
 @import "_blocks.css";

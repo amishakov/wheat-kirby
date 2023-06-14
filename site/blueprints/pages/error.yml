@@ -1,19 +1,29 @@
 title: Error
-icon: alert
-columns:
-  main:
-    width: 2/3
+tabs:
+
+  content:
     sections:
-      fields:
+      content:
         type: fields
         fields:
-          text:
-            type: textarea
-            size: medium
 
-  sidebar:
-    width: 1/3
+  seo:
     sections:
+      seo:
+        type: fields
+        fields:
+          seoTitle:
+            type: text
+          seoDescription:
+            type: text
+          seoImage:
+            type: files
+            multiple: false
+
+  advanced:
+    sections:
+      pages:
+        type: pages
       files:
         type: files
 

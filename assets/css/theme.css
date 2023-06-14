@@ -19,7 +19,22 @@
 	--gap: 2rem;
 	--gutter: 1rem;
 	--site: 1920px;
+	--header: 56px;
 }
+
+@media (min-width: 1024px) {
+	:root {
+		--header: calc(4rem - 0.015px);
+	}
+}
+
+
+@media (min-width: 1783px) {
+	:root {
+		--header: 4rem;
+	}
+}
+
 
 /* TEXT */
 

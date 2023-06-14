@@ -43,6 +43,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="<?= url('assets/images/apple-touch-icon.png') ?>">
         <link rel="icon" type="image/png" sizes="32x32" href="<?= url('assets/images/favicon-32x32.png') ?>">
         <link rel="icon" type="image/png" sizes="16x16" href="<?= url('assets/images/favicon-16x16.png') ?>">
+        <link type="text/plain" rel="author" href="/humans.txt" />
         <meta property="og:title" content="<?= $title ?>" />
         <meta property="og:description" content="<?= $desc ?>">
         <meta property="og:type" content="website" />
