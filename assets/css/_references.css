@@ -12,21 +12,25 @@
     }
 }
 
+._references hr {
+    border: none;
+    border-top: 1px solid var(--c-lightgray);
+    padding-bottom: var(--gutter);
+}
+
 ._references .prose {
     max-width: 52ch;
 }
 
-._references .refs li:not(:first-child) {
-    border-top: 1px solid var(--c-lightgray);
-    padding-top: var(--gutter);
-}
-
 ._references .refs li {
+    position: relative;
     padding-bottom: var(--gutter);
+    overflow: hidden;
 }
 
 ._references .refs li > a {
     font-size: var(--fs-l);
+    display: block;
 }
 
 ._references .refs li sub {

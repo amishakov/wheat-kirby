@@ -1,6 +1,6 @@
 <section class="_image">
-    <div class="ctn">
-        <figure>
+    <div class="ctn" in>
+        <figure fx="fadein">
             <?php if ($picture = $block->picture()->toFile()): ?>
             <?= snippet('img', ['image'=>$picture]) ?>
             <?php endif ?>            
