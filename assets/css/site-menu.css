@@ -4,7 +4,7 @@ site-menu {
 	inset: 0;
 	position: fixed;
 	text-align: center;
-	z-index: 6000;
+	z-index: 7000;
 }
 
 site-menu[data-state="true"] {
