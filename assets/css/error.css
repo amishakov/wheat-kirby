@@ -1,4 +1,9 @@
-/* #page.error {} */
+#page.error {
+    min-height: 30rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 .error_heading {
     display: flex;
@@ -7,6 +12,6 @@
     padding: 0 var(--gutter);
     font-size: var(--fs-xl);
     text-align: center;
-    margin-top: var(--rhythm);
     font-family: var(--ff-serif);
+    flex-grow: 1;
 }
