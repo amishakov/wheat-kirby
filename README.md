@@ -97,7 +97,11 @@ Setting up automatic backup is done within Ploi and takes aboit 30 seconds. We u
 
 [todo]
 
-## Fathom Analytics (Trough Zaraz)
+## Fathom Analytics
+
+[todo]
+
+## Password reset using Sendgrid
 
 [todo]
 
