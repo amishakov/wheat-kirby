@@ -30,27 +30,10 @@
 
 function scrollOn() {
 	document.body.style.removeProperty("overflow");
-	document.body.style.removeProperty("padding-right");
 }
 
 function scrollOff() {
 	document.body.style.overflow = "hidden";
-	let userAgent = window.navigator.userAgent.toLowerCase(),
-	macosPlatforms = /(macintosh|macintel|macppc|mac68k|macos)/i,
-	windowsPlatforms = /(win32|win64|windows|wince)/i,
-	iosPlatforms = /(iphone|ipad|ipod)/i,
-	os = null;
-	if (macosPlatforms.test(userAgent)) {
-		// Nothing
-	} else if (iosPlatforms.test(userAgent)) {
-		// Nothing
-	} else if (windowsPlatforms.test(userAgent)) {
-		document.body.style.paddingRight = "17px";
-	} else if (/android/.test(userAgent)) {
-		// Nothing
-	} else if (!os && /linux/.test(userAgent)) {
-		// Nothing
-	}
 }
 
 function scrollToTop(behavior = "smooth") {
