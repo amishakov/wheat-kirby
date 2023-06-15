@@ -66,7 +66,6 @@
             <?= snippet('site-menu') ?>
             <site-search></site-search>
             <?= snippet('indicator') ?>
-            <?= snippet('site-loading') ?>
         </div>
         <?php else:?>
             <?= snippet('site-maintenance') ?>
