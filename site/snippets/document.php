@@ -64,7 +64,7 @@
             <?= $slot ?>
             <?= snippet('site-footer') ?> 
             <?= snippet('site-menu') ?>
-            <site-search></site-search>
+            <?= snippet('site-search') ?>
             <?= snippet('indicator') ?>
         </div>
         <?php else:?>
