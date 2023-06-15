@@ -8,6 +8,6 @@
     hx-trigger="keyup changed delay:0.5s"
     hx-get="/search"
     hx-target="site-search .results"
-    hx-indicator="site-search .results">
+    hx-indicator="site-search">
     <div class="results"></div>
 </site-search>
