@@ -20,15 +20,17 @@
 
 /* BLOCKS */
 @import "_blocks.css";
+@import "_carousel.css";
 @import "_divider.css";
-@import "_text.css";
 @import "_feature.css";
 @import "_features.css";
 @import "_heading.css";
 @import "_image.css";
-@import "_references.css";
-@import "_carousel.css";
 @import "_loop.css";
+@import "_references.css";
+@import "_text-diptych.css";
+@import "_text-triptych.css";
+@import "_text.css";
 
 /* MISC */
 @import "fx.css";

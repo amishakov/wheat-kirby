@@ -1,5 +1,9 @@
 /* ._image {} */
 
+._image .ctn {
+    max-width: var(--w-m);
+}
+
 
 ._image figure {
     background: var(--c-lightgray);

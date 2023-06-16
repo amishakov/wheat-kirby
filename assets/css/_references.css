@@ -2,8 +2,8 @@
 
 ._references .ctn {
     display: grid;
+    max-width: var(--w-m);
     gap: var(--gap);
-
 }
 
 @media (min-width: 1024px) {

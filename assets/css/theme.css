@@ -8,8 +8,8 @@
 	--c-lightgray: #f1f1f1;
 	--c-darkgray: darkgray;
 	--c-blue: #2778f1;
-    --c-green: #5acb8e;
-    --c-red: #ff6c4b;
+	--c-green: #5acb8e;
+	--c-red: #ff6c4b;
 }
 
 /* SPACINGS */
@@ -20,9 +20,9 @@
 	--gutter: 1rem;
 	--site: 1920px;
 	--header: 56px;
-	--w-s: 50rem;
-	--w-m: 50rem;
-	--w-l: 100rem;
+	--w-s: 48rem;
+	--w-m: 64rem;
+	--w-l: 80rem;
 }
 
 @media (min-width: 1024px) {
@@ -31,23 +31,21 @@
 	}
 }
 
-
 @media (min-width: 1783px) {
 	:root {
 		--header: 4rem;
 	}
 }
 
-
 /* TEXT */
 
 :root {
-	--ff-serif: 'IBM Plex Serif', serif;
-	--ff-sans: 'Inter', sans-serif;
+	--ff-serif: "IBM Plex Serif", serif;
+	--ff-sans: "Inter", sans-serif;
 	font-family: var(--ff-sans);
-	font-size: 14px;	
-	
-	--fs-s: .8rem;
+	font-size: 14px;
+
+	--fs-s: 0.8rem;
 	--fs-m: 1rem;
 	--fs-l: 1.5rem;
 	--fs-xl: 2rem;
@@ -56,17 +54,17 @@
 
 @media (min-width: 1024px) {
 	:root {
-		font-size: 1vw;		
+		font-size: 1vw;
 	}
 }
 
 @media (min-width: 1783px) {
 	:root {
-		font-size: 18px;		
+		font-size: 18px;
 	}
 }
 
 ::selection {
-    background-color: var(--c-blue);
+	background-color: var(--c-blue);
 	color: var(--c-white);
 }
