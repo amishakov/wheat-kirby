@@ -20,6 +20,9 @@
 	--gutter: 1rem;
 	--site: 1920px;
 	--header: 56px;
+	--w-s: 50rem;
+	--w-m: 50rem;
+	--w-l: 100rem;
 }
 
 @media (min-width: 1024px) {

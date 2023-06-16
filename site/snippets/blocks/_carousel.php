@@ -1,4 +1,4 @@
-<section class="_carousel">
+<section class="_carousel"<?= e($block->anchor()->isNotEmpty(), ' id="'.$block->anchor().'"') ?>>
     <div class="ctn">
         <car-rousel delay="15000">
             <?php foreach ($block->items()->toStructure() as $item) : ?>

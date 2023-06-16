@@ -1,4 +1,4 @@
-<section class="_image">
+<section class="_image"<?= e($block->anchor()->isNotEmpty(), ' id="'.$block->anchor().'"') ?>>
     <div class="ctn" in>
         <figure fx="fadein">
             <?php if ($picture = $block->picture()->toFile()): ?>

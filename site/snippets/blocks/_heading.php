@@ -1,13 +1,13 @@
-<section class="_heading">
+<section class="_heading"<?= e($block->anchor()->isNotEmpty(), ' id="'.$block->anchor().'"') ?>>
     <div class="ctn" in>
-        <<?= $level = $block->level()->or('h2') ?> class="<?= $level ?>" fx="fadein">
-        <?= $block->title() ?>
-        </<?= $level ?>>
+        <h2 class="h2" fx="fadein">
+            <?= $block->title() ?>
+        </h2>
         <?php if ($block->links()->inNoteEmpty()): ?>
         <div class="links" in>
             <?php $i = 0 ?>
             <?php foreach ($block->links()->toStructure() as $l): ?>
-            <a class="<?= $s = $l->style()->or('btn') ?>" href="<?= $l->url() ?>" fx="fadein <?= $i++ ?>"><?= $l->label() ?></a>
+            <a class="btn" href="<?= $l->url() ?>" fx="fadein <?= $i++ ?>"><?= $l->label() ?></a>
             <?php endforeach ?>
         </div>
         <?php endif ?>

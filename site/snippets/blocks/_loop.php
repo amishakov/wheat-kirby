@@ -1,4 +1,4 @@
-<section class="_video">
+<section class="_loop"<?= e($block->anchor()->isNotEmpty(), ' id="'.$block->anchor().'"') ?>>
     <div class="ctn">
         <?php if ($v = $block->video()->toFile()): ?>
         <video 
