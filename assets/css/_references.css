@@ -14,7 +14,7 @@
 
 ._references hr {
     border: none;
-    border-top: 1px solid var(--c-lightgray);
+    border-top: 1px solid var(--c-darkgray);
     padding-bottom: var(--gutter);
 }
 

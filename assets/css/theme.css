@@ -1,13 +1,13 @@
 /* COLORS */
 
 :root {
-	--c-bg: rgb(255, 255, 255);
-	--c-fg: rgb(5, 5, 5);
-	--c-white: rgb(255, 255, 255);
-	--c-black: rgb(5, 5, 5);
-	--c-lightgray: #d1d1d1;
-	--c-darkgray: #737373;
-	--c-blue: #5593f0;
+	--c-bg: white;
+	--c-fg: #313131;
+	--c-white: white;
+	--c-black: #313131;
+	--c-lightgray: #f1f1f1;
+	--c-darkgray: darkgray;
+	--c-blue: #2778f1;
     --c-green: #5acb8e;
     --c-red: #ff6c4b;
 }
@@ -64,6 +64,6 @@
 }
 
 ::selection {
-    background-color: var(--c-red);
-	color: var(--c-fg);
+    background-color: var(--c-blue);
+	color: var(--c-white);
 }

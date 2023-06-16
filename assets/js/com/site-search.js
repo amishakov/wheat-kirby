@@ -10,24 +10,20 @@ class SiteSearch extends HTMLElement {
 		this.results = this.querySelector(".results");
 		this.toggles.forEach((toggle) => {
 			toggle.addEventListener("click", () => {
-				this.setAttribute("active", "");
-				this.input.focus();
+				this.open();
 			});
 		});
 
 		this.veil.addEventListener("click", () => {
-			this.removeAttribute("active");
-			this.reset;
+			this.close();
 		});
 
 		window.addEventListener("keydown", (event) => {
 			if (event.key === "Escape") {
-				this.removeAttribute("active");
-				this.reset();
-			} else if (event.ctrlKey && event.key == "k") {
+				this.close();
+			} else if (event.ctrlKey && event.key == "k" || event.metaKey && event.key == "k") {
 				event.preventDefault();
-				this.setAttribute("active", "");
-				this.input.focus();
+				this.open();
 			}
 		});
 	}
@@ -35,6 +31,16 @@ class SiteSearch extends HTMLElement {
 	reset() {
 		this.results.innerHTML = "";
 		this.input.value = "";
+	}
+
+	open() {
+		this.setAttribute("active", "");
+		this.input.focus();
+	}
+
+	close() {
+		this.removeAttribute("active");
+		this.reset();
 	}
 }
 customElements.define("site-search", SiteSearch);
