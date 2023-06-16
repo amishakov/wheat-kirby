@@ -1,4 +1,4 @@
-<section class="_references">
+<section class="_references"<?= e($block->anchor()->isNotEmpty(), ' id="'.$block->anchor().'"') ?>>
     <div class="ctn">
         <div class="content" in>
             <div class="prose" fx="fadein">

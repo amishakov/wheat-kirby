@@ -15,9 +15,10 @@ tabs:
               - _features
               - _heading
               - _image
+              - _loop
               - _references
               - _text
-              - _video
+              - _youtube
 
   seo:
     sections:

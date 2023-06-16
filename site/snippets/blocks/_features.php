@@ -1,4 +1,4 @@
-<section class="_features">
+<section class="_features"<?= e($block->anchor()->isNotEmpty(), ' id="'.$block->anchor().'"') ?>>
     <div class="ctn" in>
         <?php $i = 0 ?>
         <?php foreach ($block->items()->toStructure() as $item): ?>

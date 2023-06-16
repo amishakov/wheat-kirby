@@ -1,4 +1,4 @@
-<section class="_feature">
+<section class="_feature"<?= e($block->anchor()->isNotEmpty(), ' id="'.$block->anchor().'"') ?> in>
     <div class="ctn">
         <div class="media <?= $block->position()->or('left') ?>">
             <?php if($picture = $block->picture()->toFile()): ?>
