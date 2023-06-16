@@ -2,7 +2,7 @@
 <?php if (strlen(get('q')) < 1): ?>
 <div class="noresult">
     <?= asset('assets/svg/explore.svg')->read() ?>
-    Start typing...
+    <?= t('start typing') ?> ...
 </div>
 <?php elseif ($results->count() > 0): ?>
 <?php foreach ($results->listed() as $result): ?>
@@ -15,6 +15,6 @@
 <?php else: ?>
 <div class="noresult">
     <?= asset('assets/svg/block.svg')->read() ?>
-    No results...
+    <?= t('no results') ?>
 </div>
 <?php endif ?>
