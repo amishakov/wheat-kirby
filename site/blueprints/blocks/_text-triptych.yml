@@ -1,0 +1,13 @@
+name: Text Triptych
+icon: text
+label: "{{ anchor }}"
+fields:
+  anchor: 
+    type: slug
+  text01:
+    type: textarea
+  text02:
+    type: textarea
+  text03:
+    type: textarea
+    

@@ -1,5 +1,9 @@
 /* ._divider {} */
 
+._divider .ctn {
+    max-width: var(--w-m);
+}
+
 ._divider hr {
     border: none;
     height: 1px;

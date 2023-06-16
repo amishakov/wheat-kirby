@@ -6,6 +6,8 @@ tabs:
       content:
         type: fields
         fields:
+          headline:
+            type: text
           blocks:
             type: blocks
             fieldsets:
@@ -19,6 +21,8 @@ tabs:
               - _references
               - _text
               - _youtube
+              - _text-diptych
+              - _text-triptych
 
   seo:
     sections:

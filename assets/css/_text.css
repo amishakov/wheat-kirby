@@ -1,19 +1,11 @@
 /* ._text {} */
 
 ._text .ctn {
-    display: grid;
-    gap: var(--gap);
-
-}
-
-@media (min-width: 1024px) {
-    ._text .ctn {
-        grid-template-columns: 1fr 1fr;
-    }
+    max-width: var(--w-s);
 }
 
 ._text .links {
-    gap: var(--gap);
+    gap: 0.5rem;
     display: flex;
     align-items: center;
 }
