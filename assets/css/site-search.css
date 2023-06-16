@@ -41,6 +41,7 @@ site-search input {
 }
 
 site-search .results {
+	position: relative;
 	border-radius: 0.5rem;
 	overflow: hidden;
 	margin: var(--gutter) auto 0 auto;
@@ -97,4 +98,3 @@ site-search .noresult svg {
 	width: 2rem;
 	height: auto;
 }
-

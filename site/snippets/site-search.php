@@ -3,7 +3,7 @@
     <input 
     type="text" 
     name="q" value="" 
-    placeholder="Search for anything …" 
+    placeholder="<?= t('search for anything') ?>" 
     autocomplete="off"
     hx-trigger="keyup changed delay:0.25s"
     hx-get="/<?= $kirby->languageCode() ?>/search"
@@ -12,7 +12,7 @@
     <div class="results">
         <div class="noresult">
             <?= asset('assets/svg/explore.svg')->read() ?>
-            Start typing...
+            <?= t('start typing') ?> ...
         </div>
     </div>
 </site-search>

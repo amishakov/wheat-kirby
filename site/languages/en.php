@@ -1,18 +1,21 @@
 <?php
 
 return [
-    'code' => 'en',
-    'default' => true,
-    'direction' => 'ltr',
-    'locale' => [
-        'LC_ALL' => 'en_US'
+    "code" => "en",
+    "default" => true,
+    "direction" => "ltr",
+    "locale" => [
+        "LC_ALL" => "en_US"
     ],
-    'name' => 'English',
-    'translations' => [
-        'menu' => 'menu',
-        'open' => 'open',
-        'close' => 'close',
-        'search' => 'serach'
+    "name" => "English",
+    "translations" => [
+        "menu" => "Menu",
+        "open" => "Open",
+        "close" => "Close",
+        "search" => "Search",
+        "start typing" => "Start typing",
+        "no results" => "No results",
+        "search for anything" => "Search for anything",
     ],
-    'url' => NULL
+    "url" => NULL
 ];
