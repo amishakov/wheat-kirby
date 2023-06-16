@@ -6,7 +6,7 @@
     placeholder="Search for anything …" 
     autocomplete="off"
     hx-trigger="keyup changed delay:0.25s"
-    hx-get="/search"
+    hx-get="/<?= $kirby->languageCode() ?>/search"
     hx-target="site-search .results"
     hx-indicator="site-search">
     <div class="results">

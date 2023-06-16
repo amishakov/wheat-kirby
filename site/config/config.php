@@ -74,9 +74,9 @@ return [
             'language' => '*',
             'action'  => function() {
                 $site = site();
-                $content = snippet('search-results', compact('site'), true);
+                $content = snippet('site-search-results', compact('site'), true);
                 return new Kirby\Cms\Response($content, 'text/html');
             }
-        ]
-    ],
+        ]  
+    ]
 ];
