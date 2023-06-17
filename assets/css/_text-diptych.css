@@ -1,7 +1,7 @@
 /* ._text-diptych {} */
 
 ._text-diptych .ctn {
-    max-width: var(--w-l);
+    max-width: var(--w-m);
     display: grid;
     gap: var(--gap);
 }
