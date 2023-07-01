@@ -6,5 +6,16 @@ return [
             'active' => true,
         ]
     ],
-    'debug'  => false
+    'debug'  => false,
+    'email' => [
+        'transport' => [
+            'type' => 'smtp',
+            'host' => '	smtp.sendgrid.net',
+            'port' => 465,
+            'security' => true,
+            'auth' => true,
+            'username' => 'apikey',
+            'password' => ''
+        ]
+    ]
 ];

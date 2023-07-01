@@ -16,9 +16,9 @@ return [
     'email' => [
         'transport' => [
             'type' => 'smtp',
-            'host' => 'smtp.company.com',
-            'port' => 465,
-            'security' => true,
+            'host' => 'localhost',
+            'port' => 1025,
+            'security' => false
         ]
     ],
     'auth' => [
