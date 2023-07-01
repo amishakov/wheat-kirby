@@ -7,6 +7,9 @@ return [
         ]
     ],
     'debug'  => false,
+    'auth' => [
+        'methods' => ['password','code']
+    ],
     'email' => [
         'transport' => [
             'type' => 'smtp',

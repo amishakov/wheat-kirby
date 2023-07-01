@@ -22,7 +22,7 @@ return [
         ]
     ],
     'auth' => [
-        'methods' => ['password', 'password-reset']
+        'methods' => ['password','code']
     ],
     'panel' => [
         'slug' => 'panel',
